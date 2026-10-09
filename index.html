@@ -333,7 +333,7 @@ async function fsQuery(coll, filter, orderBy, limit){
 function setConn(t, ok){
   var c=document.getElementById('connStatus'); if(c){ c.textContent=t; c.style.color = ok===true ? '#00a651' : (ok===false ? '#d43d2a' : '#68746c'); }
   var b=document.getElementById('loginBtn');
-  if(b){ if(ok===true){ b.disabled=false; b.style.opacity='1'; b.textContent='Login'; } else { b.disabled=true; b.style.opacity='.55'; b.textContent = ok===false ? 'Retry…' : 'Connecting…'; } }
+  if(b){ if(ok===true){ b.disabled=false; b.style.opacity='1'; b.textContent='Login'; b.onclick=function(){ doLogin(); }; } else { b.disabled=true; b.style.opacity='.55'; b.textContent = ok===false ? 'Retry…' : 'Connecting…'; } }
 }
 async function doAuth(attempt){
   attempt=attempt||1;
