@@ -4,6 +4,6 @@
   "versionName": "1.0.64",
   "versionCode": 65,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "App Update moved into App Info section; updater flow robust (auto-resume, no double-tap, verified download)",
+  "notes": "App Update moved into App Info section; updater flow robust",
   "updatedAt": "2026-10-10T08:24:00+05:00"
 }
