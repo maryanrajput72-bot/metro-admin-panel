@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.0.97",
-  "versionCode": 98,
+  "versionName": "1.0.98",
+  "versionCode": 99,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Station picker now centered dialog, same width as side panel",
-  "updatedAt": "2026-10-10T22:38:00+05:00"
+  "notes": "Station picker: search removed, scroll-only selection",
+  "updatedAt": "2026-10-10T22:45:00+05:00"
 }
