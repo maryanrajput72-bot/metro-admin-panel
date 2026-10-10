@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.15",
-  "versionCode": 116,
+  "versionName": "1.1.16",
+  "versionCode": 117,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "ANR fix (background video save) + camera-open without play button",
-  "updatedAt": "2026-10-11T01:47:00+05:00"
+  "notes": "Station+shift cloud history (today + 3 days) for every TL",
+  "updatedAt": "2026-10-11T01:53:00+05:00"
 }
