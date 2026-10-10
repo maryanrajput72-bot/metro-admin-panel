@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.12",
-  "versionCode": 113,
+  "versionName": "1.1.13",
+  "versionCode": 114,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Data-fill date selector + white-screen fix",
-  "updatedAt": "2026-10-11T01:24:00+05:00"
+  "notes": "GPS: smooth video, timer, flip button, video-only WhatsApp share",
+  "updatedAt": "2026-10-11T01:38:00+05:00"
 }
