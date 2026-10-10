@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.2",
-  "versionCode": 103,
+  "versionName": "1.1.3",
+  "versionCode": 104,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Old green M logo restored everywhere",
-  "updatedAt": "2026-10-10T23:47:00+05:00"
+  "notes": "Same green M everywhere + install status fix (FLAG_MUTABLE)",
+  "updatedAt": "2026-10-11T00:00:00+05:00"
 }
