@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.8",
-  "versionCode": 109,
+  "versionName": "1.1.9",
+  "versionCode": 110,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Auto Fill two-step login + app relaunch after update",
-  "updatedAt": "2026-10-11T00:50:00+05:00"
+  "notes": "Pretty portal login sheet + TOM empty-state card",
+  "updatedAt": "2026-10-11T00:57:00+05:00"
 }
