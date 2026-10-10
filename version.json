@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.14",
-  "versionCode": 115,
+  "versionName": "1.1.15",
+  "versionCode": 116,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Thank-you confetti celebration",
-  "updatedAt": "2026-10-11T01:40:00+05:00"
+  "notes": "ANR fix (background video save) + camera-open without play button",
+  "updatedAt": "2026-10-11T01:47:00+05:00"
 }
