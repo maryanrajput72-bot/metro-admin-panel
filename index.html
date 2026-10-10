@@ -109,11 +109,11 @@
   #dbGrid .shrow .dot{width:auto;height:24px;border-radius:999px;padding:0 13px;margin:0;display:inline-flex;align-items:center;vertical-align:baseline;}
   #dbGrid .shrow .dot::after{font-size:12px;font-weight:600;line-height:1;}
   #dbGrid .shrow .dot.g{background:#e6f6ec;}
-  #dbGrid .shrow .dot.g::after{content:'Mukammal';color:#008f46;}
+  #dbGrid .shrow .dot.g::after{content:'Complete';color:#008f46;}
   #dbGrid .shrow .dot.a{background:#fdf3e0;}
-  #dbGrid .shrow .dot.a::after{content:'Adhoora';color:#b26a00;}
+  #dbGrid .shrow .dot.a::after{content:'Incomplete';color:#b26a00;}
   #dbGrid .shrow .dot.n{background:#eef1f6;}
-  #dbGrid .shrow .dot.n::after{content:'Khaali';color:#8a93a8;}
+  #dbGrid .shrow .dot.n::after{content:'Empty';color:#8a93a8;}
   #dbGrid .nums{display:contents;}
   #dbGrid .cash{font-size:14px;font-weight:700;color:var(--green-d);text-align:right;letter-spacing:-.2px;}
   #dbGrid .nums .staffn{font-size:12.5px;color:var(--mut);}
@@ -182,13 +182,13 @@
   <div class="login-card">
     <div class="logo">M+</div>
     <h2>Metro+ Admin</h2>
-    <p class="tagline">Staff system ka control room</p>
-    <span class="ver">v7</span>
-    <input type="text" id="loginPhone" inputmode="numeric" maxlength="11" placeholder="Apna mobile number likhein">
+    <p class="tagline">Staff system control room</p>
+    <span class="ver">v8</span>
+    <input type="text" id="loginPhone" inputmode="numeric" maxlength="11" placeholder="Enter your mobile number">
     <button class="btn" id="loginBtn" disabled style="opacity:.55" onclick="doLogin()">Connecting…</button>
-    <div class="status" id="connStatus">Server se connect ho raha hai…</div>
+    <div class="status" id="connStatus">Connecting to server…</div>
     <div class="err" id="loginErr"></div>
-    <p class="fine">Sirf admin number se login hoga</p>
+    <p class="fine">Only admin numbers can log in</p>
   </div>
 </div>
 
@@ -224,8 +224,8 @@
       <div class="card">
         <div class="cardhead">
           <h3>Station status</h3>
-          <div class="legend"><span class="pill ok">Mukammal</span><span class="pill warn">Adhoora</span><span class="pill none">Khaali</span></div>
-          <input type="text" id="dbSearch" class="search" placeholder="Station search…" oninput="filterStations(this.value)">
+          <div class="legend"><span class="pill ok">Complete</span><span class="pill warn">Incomplete</span><span class="pill none">Empty</span></div>
+          <input type="text" id="dbSearch" class="search" placeholder="Search station…" oninput="filterStations(this.value)">
         </div>
         <div class="stable-head"><span>Station</span><span>Morning</span><span>Evening</span><span style="text-align:right">Collection</span><span>Staff</span></div>
         <div id="dbGrid"></div>
@@ -239,10 +239,10 @@
       </div>
       <div class="card">
         <div class="filters">
-          <select id="opStation"><option value="">Saare stations</option></select>
-          <select id="opShift"><option value="">Dono shifts</option><option>Morning</option><option>Evening</option></select>
+          <select id="opStation"><option value="">All stations</option></select>
+          <select id="opShift"><option value="">Both shifts</option><option>Morning</option><option>Evening</option></select>
           <input type="date" id="opDate">
-          <button class="btn sm" onclick="loadOpening()">Dekho</button>
+          <button class="btn sm" onclick="loadOpening()">View</button>
         </div>
       </div>
       <div id="opOut"></div>
@@ -255,10 +255,10 @@
       </div>
       <div class="card">
         <div class="filters">
-          <select id="clStation"><option value="">Saare stations</option></select>
-          <select id="clShift"><option value="">Dono shifts</option><option>Morning</option><option>Evening</option></select>
+          <select id="clStation"><option value="">All stations</option></select>
+          <select id="clShift"><option value="">Both shifts</option><option>Morning</option><option>Evening</option></select>
           <input type="date" id="clDate">
-          <button class="btn sm" onclick="loadClosing()">Dekho</button>
+          <button class="btn sm" onclick="loadClosing()">View</button>
         </div>
       </div>
       <div id="clOut"></div>
@@ -267,12 +267,12 @@
     <!-- STAFF -->
     <section id="tab-staff" class="hidden">
       <div class="pagehead">
-        <div><h2>Staff</h2><p class="sub">Staff management aur attendance</p></div>
+        <div><h2>Staff</h2><p class="sub">Staff management and attendance</p></div>
       </div>
       <div class="card">
-        <div class="cardhead"><h3>Naya staff add karein</h3></div>
+        <div class="cardhead"><h3>Add new staff</h3></div>
         <div class="formgrid">
-          <input type="text" id="uName" placeholder="Naam">
+          <input type="text" id="uName" placeholder="Name">
           <input type="text" id="uPhone" inputmode="numeric" maxlength="11" placeholder="Mobile number">
           <select id="uStation"></select>
           <select id="uShift"><option>Morning</option><option>Evening</option></select>
@@ -281,18 +281,18 @@
         </div>
       </div>
       <div class="card">
-        <div class="cardhead"><h3>Aaj ki attendance</h3><span class="tag" id="attDateTag"></span></div>
+        <div class="cardhead"><h3>Today's attendance</h3><span class="tag" id="attDateTag"></span></div>
         <div id="attSum"></div>
       </div>
       <div class="card">
         <div class="cardhead"><h3>Registered staff</h3></div>
         <div class="filters" style="margin-bottom:12px">
-          <select id="uFilterStation"><option value="">Saare stations</option></select>
-          <input type="text" id="uFilterQ" placeholder="Naam/number search…">
-          <button class="btn sm" onclick="loadUsers()">Dekho</button>
+          <select id="uFilterStation"><option value="">All stations</option></select>
+          <input type="text" id="uFilterQ" placeholder="Name/number search…">
+          <button class="btn sm" onclick="loadUsers()">View</button>
         </div>
         <div class="tablewrap"><table class="dt">
-          <thead><tr><th>Naam</th><th>Number</th><th>Station</th><th>Shift</th><th>Role</th><th></th></tr></thead>
+          <thead><tr><th>Name</th><th>Number</th><th>Station</th><th>Shift</th><th>Role</th><th></th></tr></thead>
           <tbody id="uBody"></tbody>
         </table></div>
       </div>
@@ -301,14 +301,14 @@
     <!-- PHOTOS -->
     <section id="tab-photos" class="hidden">
       <div class="pagehead">
-        <div><h2>GPS Photos</h2><p class="sub">Staff ki location photos</p></div>
+        <div><h2>GPS Photos</h2><p class="sub">Staff location photos</p></div>
       </div>
       <div class="card">
         <div class="filters">
-          <select id="phStation"><option value="">Saare stations</option></select>
-          <select id="phShift"><option value="">Dono shifts</option><option>Morning</option><option>Evening</option></select>
+          <select id="phStation"><option value="">All stations</option></select>
+          <select id="phShift"><option value="">Both shifts</option><option>Morning</option><option>Evening</option></select>
           <input type="date" id="phDate">
-          <button class="btn sm" onclick="loadPhotos()">Dekho</button>
+          <button class="btn sm" onclick="loadPhotos()">View</button>
         </div>
       </div>
       <div class="ph-grid" id="phGrid"></div>
@@ -351,7 +351,7 @@ function money(n){ return 'Rs. '+Math.round(num(n)).toLocaleString('en-US'); }
 function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 function shiftPill(sh){ return '<span class="pill '+(sh==='Morning'?'m':'e')+'">'+esc(sh)+'</span>'; }
 
-/* ================= FIREBASE REST (SDK nahi — seedha server se) ================= */
+/* ================= FIREBASE REST (no SDK — direct to server) ================= */
 var API_KEY = firebaseConfig.apiKey;
 var PROJECT = firebaseConfig.projectId;
 var FS = 'https://firestore.googleapis.com/v1/projects/'+PROJECT+'/databases/(default)/documents';
@@ -427,7 +427,7 @@ function setConn(t, ok){
 }
 async function doAuth(attempt){
   attempt=attempt||1;
-  setConn('Server se connect ho raha hai… (koshish '+attempt+')');
+  setConn('Connecting to server… (attempt '+attempt+')');
   try{
     var r=await fetchT(AUTH_URL,{method:'POST',headers:{'Content-Type':'text/plain'},body:'{"returnSecureToken":true}'},20000);
     var d=await r.json();
@@ -437,11 +437,11 @@ async function doAuth(attempt){
   }catch(e){
     var msg=(e&&e.name==='AbortError')?'timeout (20s)':((e&&e.message)||e);
     if(attempt<4){
-      setConn('Koshish '+attempt+' nakaam ('+msg+') — dobara…');
+      setConn('Attempt '+attempt+' failed ('+msg+') — retrying…');
       setTimeout(function(){ doAuth(attempt+1); },2000);
     }else{
-      setConn('Connect nahi ho saka.', false);
-      showErr('Server se rabta nahi ho saka ('+msg+'). Internet check karein aur Retry dabayein.');
+      setConn('Could not connect.', false);
+      showErr('Could not reach the server ('+msg+'). Check your internet and press Retry.');
       var b=document.getElementById('loginBtn');
       if(b){ b.disabled=false; b.style.opacity='1'; b.textContent='Retry'; b.onclick=function(){ b.onclick=null; doAuth(1); }; }
     }
@@ -450,13 +450,13 @@ async function doAuth(attempt){
 function showErr(m){ var e=document.getElementById('loginErr'); e.style.display='block'; e.style.background='#fdecea'; e.style.color='#d43d2a'; e.textContent=m; }
 function setBusy(b){
   var btn=document.getElementById('loginBtn');
-  if(btn){ btn.disabled=b; btn.style.opacity=b?'.55':'1'; btn.textContent=b?'Ruko…':'Login'; }
+  if(btn){ btn.disabled=b; btn.style.opacity=b?'.55':'1'; btn.textContent=b?'Please wait…':'Login'; }
 }
 async function doLogin(){
   var errBox=document.getElementById('loginErr'); errBox.style.display='none';
-  if(!idToken){ showErr('Abhi server se connect ho raha hai — upar "Connected ✓" ka wait karein.'); return; }
+  if(!idToken){ showErr('Still connecting to the server — wait for "Connected ✓" above.'); return; }
   var phone=document.getElementById('loginPhone').value.replace(/\D/g,'');
-  if(phone.length<10){ showErr('Sahi mobile number likhein (kam az kam 10 hindse)'); return; }
+  if(phone.length<10){ showErr('Enter a valid mobile number (at least 10 digits)'); return; }
   setBusy(true);
   try{
     var u=await fsGet('users/'+phone);
@@ -465,13 +465,13 @@ async function doLogin(){
       if(!admins.length){
         setBusy(false);
         errBox.style.display='block'; errBox.style.background='var(--green-l)'; errBox.style.color='var(--green-d)';
-        errBox.innerHTML='Koi admin nahi mila.<br><button class="btn" style="margin-top:10px;width:100%" onclick="claimAdmin(\''+phone+'\')">Is number ('+phone+') ko ADMIN banao</button>';
+        errBox.innerHTML='No admin found.<br><button class="btn" style="margin-top:10px;width:100%" onclick="claimAdmin(\''+phone+'\')">Make this number ('+phone+') ADMIN</button>';
         return;
       }
       setBusy(false);
-      showErr('Ye number registered nahi hai — pehle admin se rabta karein.'); return;
+      showErr('This number is not registered — contact an admin first.'); return;
     }
-    if(u.role!=='admin'){ setBusy(false); showErr('Ye number admin nahi hai (role: '+u.role+').'); return; }
+    if(u.role!=='admin'){ setBusy(false); showErr('This number is not an admin (role: '+u.role+').'); return; }
     enterApp(phone, u.name);
   }catch(e){ setBusy(false); showErr('Error: '+e.message); }
 }
@@ -480,7 +480,7 @@ async function claimAdmin(phone){
   try{
     await fsSet('users/'+phone,{name:'Admin',phone:phone,station:'',shift:'',role:'admin',createdAt:new Date().toISOString()});
     enterApp(phone,'Admin');
-  }catch(e){ setBusy(false); showErr('Admin banane me error: '+e.message); }
+  }catch(e){ setBusy(false); showErr('Error making admin: '+e.message); }
 }
 function enterApp(phone, name){
   adminPhone=phone;
@@ -507,8 +507,8 @@ function fillSelects(){
   ['opStation','clStation','phStation','uStation','uFilterStation'].forEach(function(id){
     var el=document.getElementById(id);
     if(id==='uStation'){ el.innerHTML=opts; }
-    else if(id==='uFilterStation'){ el.innerHTML='<option value="">Saare stations</option>'+opts; }
-    else { el.innerHTML='<option value="">Saare stations</option>'+opts; }
+    else if(id==='uFilterStation'){ el.innerHTML='<option value="">All stations</option>'+opts; }
+    else { el.innerHTML='<option value="">All stations</option>'+opts; }
   });
 }
 
@@ -569,7 +569,7 @@ async function loadDashboard(){
   var date=document.getElementById('dbDate').value||todayKey();
   var grid=document.getElementById('dbGrid');
   document.getElementById('dbChips').innerHTML='';
-  grid.innerHTML='<div class="spinner">Load ho raha hai…</div>';
+  grid.innerHTML='<div class="spinner">Loading…</div>';
   try{
     var recs=await fsQuery('records',{field:'date',value:date},null,100);
     var map={};
@@ -591,18 +591,18 @@ async function loadDashboard(){
       html+='<div class="st" onclick="jumpStation(\''+s.id+'\',\''+date+'\')">'
         +'<div class="nm">'+esc(s.name)+'</div>'
         +'<div class="shrow"><span><span class="dot '+dm+'"></span>Morning</span><span><span class="dot '+de+'"></span>Evening</span></div>'
-        +'<div class="nums"><div class="cash">'+money(cash)+'</div><div class="staffn">👥 '+staff+' staff</div></div>'
+        +'<div class="nums"><div class="cash">'+money(cash)+'</div><div class="staffn">'+staff+' staff</div></div>'
         +(who.length?'<div class="staffn" style="margin-top:4px">'+esc(who.slice(0,2).join(' · '))+'</div>':'')
         +'</div>';
     });
     grid.innerHTML=html;
     document.getElementById('dbChips').innerHTML=
-      '<div class="chip hi"><b style="color:var(--green-d)">'+money(totalCash)+'</b><span>kul collection ('+date+')</span></div>'
-      +'<div class="chip"><b>'+totalStaff+'</b><span>staff present</span></div>'
-      +'<div class="chip hi"><b style="color:var(--green)">'+full+'</b><span>mukammal stations</span></div>'
-      +'<div class="chip warn"><b style="color:var(--amber)">'+part+'</b><span>adhoore stations</span></div>'
-      +'<div class="chip bad"><b style="color:var(--red)">'+(24-full-part)+'</b><span>khaali stations</span></div>'
-      +'<div class="chip"><b>'+recs.length+'</b><span>total records</span></div>';
+      '<div class="chip hi"><b style="color:var(--green-d)">'+money(totalCash)+'</b><span>total collection ('+date+')</span></div>'
+      +'<div class="chip"><b>'+totalStaff+'</b><span>Staff present</span></div>'
+      +'<div class="chip hi"><b style="color:var(--green)">'+full+'</b><span>Complete stations</span></div>'
+      +'<div class="chip warn"><b style="color:var(--amber)">'+part+'</b><span>Incomplete stations</span></div>'
+      +'<div class="chip bad"><b style="color:var(--red)">'+(24-full-part)+'</b><span>Empty stations</span></div>'
+      +'<div class="chip"><b>'+recs.length+'</b><span>Total records</span></div>';
   }catch(e){
     grid.innerHTML='<div class="empty">Error: '+esc(e.message)+'</div>';
   }
@@ -619,7 +619,7 @@ async function loadOpening(){
   var date=document.getElementById('opDate').value||todayKey();
   var fSid=document.getElementById('opStation').value, fSh=document.getElementById('opShift').value;
   var out=document.getElementById('opOut');
-  out.innerHTML='<div class="spinner">Load ho raha hai…</div>';
+  out.innerHTML='<div class="spinner">Loading…</div>';
   try{
     var recs=await fsQuery('records',{field:'date',value:date},null,100);
     var list=recs.filter(function(r){
@@ -629,29 +629,29 @@ async function loadOpening(){
       return (hasOp||hasAtt) && (!fSid||r.stationId===fSid) && (!fSh||r.shift===fSh);
     });
     list.sort(function(a,b){ return (a.stationId+a.shift) < (b.stationId+b.shift) ? -1 : 1; });
-    if(!list.length){ out.innerHTML='<div class="empty">Is date par koi opening data nahi mila.<br><span class="mut">Date ya filter badal ke dekhein.</span></div>'; return; }
+    if(!list.length){ out.innerHTML='<div class="empty">No opening data found for this date.<br><span class="mut">Try changing the date or filters.</span></div>'; return; }
     var html='';
     list.forEach(function(r){
       var t=r.tom||{}, a=r.attendance||{};
       var ms=activeMachines(t);
-      var attHtml='<div class="sec-label">👥 Staff attendance</div><div class="att-grid">'
+      var attHtml='<div class="sec-label">Staff attendance</div><div class="att-grid">'
         +attCell('Present',a.present,'var(--green-d)')+attCell('Total',a.total)+attCell('Absent',a.absent)+attCell('Off',a.off)+attCell('Leave',a.leave)+attCell('Overtime',a.ot)
         +'</div>';
       var machHtml='';
       if(ms.length){
-        machHtml='<div class="sec-label">🎰 Machines — opening</div><div style="overflow:auto;"><table class="dt"><thead><tr><th>Machine</th><th>Opening</th><th>Recharge</th></tr></thead><tbody>'
+        machHtml='<div class="sec-label">Machines — opening</div><div style="overflow:auto;"><table class="dt"><thead><tr><th>Machine</th><th>Opening</th><th>Recharge</th></tr></thead><tbody>'
           +ms.map(function(mch){
             var k=mch.key, lb=mch.label;
             return '<tr><td><b>'+lb+'</b></td><td>'+money(t[k+'_opening'])+'</td><td>'+money(t[k+'_recharge'])+'</td></tr>';
           }).join('')+'</tbody></table></div>';
       }
-      var rolls='<div class="sec-label">🧾 Rolls — opening</div><div style="overflow:auto;"><table class="dt"><thead><tr><th>Roll</th><th>Opening</th><th>Receive</th><th>Distribute</th></tr></thead><tbody>'
+      var rolls='<div class="sec-label">Rolls — opening</div><div style="overflow:auto;"><table class="dt"><thead><tr><th>Roll</th><th>Opening</th><th>Receive</th><th>Distribute</th></tr></thead><tbody>'
         +rollRow('BOP',t,'bop_roll_')+rollRow('TOM',t,'tom_roll_')+rollRow('TKM',t,'tkm_roll_')
         +'</tbody></table></div>';
-      html+='<div class="card blue"><h3>'+esc(r.stationName||stName(r.stationId))+' '+shiftPill(r.shift)+' <span class="tag">'+esc(date)+'</span></h3>'
+      html+='<div class="card blue"><div class="cardhead"><h3>'+esc(r.stationName||stName(r.stationId))+' '+shiftPill(r.shift)+' <span class="tag">'+esc(date)+'</span></h3><button class="btn danger sm" onclick="delRecord(\''+r.stationId+'\',\''+r.shift+'\',\''+date+'\')">Delete record</button></div>'
         +attHtml+machHtml+rolls
-        +'<div class="foot">Bheja: <b>'+esc(r.byName||'—')+'</b> ('+esc(r.byPhone||'—')+')'
-        +(t.openingSavedAt?' · Opening save: '+new Date(t.openingSavedAt).toLocaleString('en-GB',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'}):'')
+        +'<div class="foot">Sent by: <b>'+esc(r.byName||'—')+'</b> ('+esc(r.byPhone||'—')+')'
+        +(t.openingSavedAt?' · Opening saved: '+new Date(t.openingSavedAt).toLocaleString('en-GB',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'}):'')
         +'</div></div>';
     });
     out.innerHTML=html;
@@ -671,7 +671,7 @@ async function loadClosing(){
   var date=document.getElementById('clDate').value||todayKey();
   var fSid=document.getElementById('clStation').value, fSh=document.getElementById('clShift').value;
   var out=document.getElementById('clOut');
-  out.innerHTML='<div class="spinner">Load ho raha hai…</div>';
+  out.innerHTML='<div class="spinner">Loading…</div>';
   try{
     var recs=await fsQuery('records',{field:'date',value:date},null,100);
     var list=recs.filter(function(r){
@@ -680,7 +680,7 @@ async function loadClosing(){
         && (!fSid||r.stationId===fSid) && (!fSh||r.shift===fSh);
     });
     list.sort(function(a,b){ return (a.stationId+a.shift) < (b.stationId+b.shift) ? -1 : 1; });
-    if(!list.length){ out.innerHTML='<div class="empty">Is date par koi closing data nahi mila.<br><span class="mut">Jab staff closing save karega to yahan nazar aayega.</span></div>'; return; }
+    if(!list.length){ out.innerHTML='<div class="empty">No closing data found for this date.<br><span class="mut">It will appear here when staff saves the closing.</span></div>'; return; }
     var html='';
     list.forEach(function(r){
       var t=r.tom||{};
@@ -698,30 +698,30 @@ async function loadClosing(){
         if(!hasCl&&(op===undefined||op===''||op===null)) return '';
         return '<tr><td><b>'+lb+'</b></td><td>'+money(op)+'</td><td>'+money(rv)+'</td><td>'+money(ds)+'</td><td>'+money(cl)+'</td><td>'+varCell(rollVar(op,rv,ds,cl,hasCl))+'</td></tr>';
       }).join('');
-      html+='<div class="card amber"><h3>'+esc(r.stationName||stName(r.stationId))+' '+shiftPill(r.shift)+' <span class="tag">'+esc(date)+'</span></h3>'
-        +'<div class="sec-label">🎰 Machines — closing & sale</div>'
+      html+='<div class="card amber"><div class="cardhead"><h3>'+esc(r.stationName||stName(r.stationId))+' '+shiftPill(r.shift)+' <span class="tag">'+esc(date)+'</span></h3><button class="btn danger sm" onclick="delRecord(\''+r.stationId+'\',\''+r.shift+'\',\''+date+'\')">Delete record</button></div>'
+        +'<div class="sec-label">Machines — closing & sale</div>'
         +'<div style="overflow:auto;"><table class="dt"><thead><tr><th>Machine</th><th>Opening</th><th>Recharge</th><th>Closing</th><th>Sale</th><th>Slips</th><th>Variance</th></tr></thead><tbody>'
-        +(rows||'<tr><td colspan="7" class="mut">Machine data nahi</td></tr>')
+        +(rows||'<tr><td colspan="7" class="mut">No machine data</td></tr>')
         +'</tbody></table></div>'
-        +'<div class="sec-label">🧾 Rolls — closing</div>'
+        +'<div class="sec-label">Rolls — closing</div>'
         +'<div style="overflow:auto;"><table class="dt"><thead><tr><th>Roll</th><th>Opening</th><th>Receive</th><th>Distribute</th><th>Closing</th><th>Variance</th></tr></thead><tbody>'
-        +(rollRows||'<tr><td colspan="6" class="mut">Roll data nahi</td></tr>')
+        +(rollRows||'<tr><td colspan="6" class="mut">No roll data</td></tr>')
         +'</tbody></table></div>'
-        +'<div class="sec-label">💰 BOP sale</div>'
+        +'<div class="sec-label">BOP sale</div>'
         +'<div class="att-grid">'
         +'<div class="att"><b>'+esc(t.bop_card_count||'0')+'</b><span>Card count</span></div>'
         +'<div class="att"><b>'+formatSlipsNum(num(t.bop_sale_slips)*30)+' slips</b><span>Slips</span></div>'
         +'<div class="att"><b style="color:var(--green-d)">'+money(tt.bopAmt)+'</b><span>Amount</span></div>'
         +'</div>'
-        +'<div class="sec-label">🏁 Grand total</div>'
+        +'<div class="sec-label">Grand total</div>'
         +'<div style="overflow:auto;"><table class="dt"><tbody>'
         +'<tr><td>TOM machines sale</td><td style="text-align:right"><b>'+money(tt.tomSale)+'</b></td></tr>'
         +'<tr><td>BOP sale</td><td style="text-align:right"><b>'+money(tt.bopAmt)+'</b></td></tr>'
         +'<tr class="tot-row"><td>NET TOTAL PHYSICAL CASH</td><td style="text-align:right">'+money(tt.grandSale)+'</td></tr>'
         +'<tr class="tot-row"><td>TOTAL CASH SALE COUNT</td><td style="text-align:right">'+tt.grandSlips+' slips</td></tr>'
         +'</tbody></table></div>'
-        +'<div class="foot">Bheja: <b>'+esc(r.byName||'—')+'</b> ('+esc(r.byPhone||'—')+')'
-        +(t.closingSavedAt?' · Closing save: '+new Date(t.closingSavedAt).toLocaleString('en-GB',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'}):'')
+        +'<div class="foot">Sent by: <b>'+esc(r.byName||'—')+'</b> ('+esc(r.byPhone||'—')+')'
+        +(t.closingSavedAt?' · Closing saved: '+new Date(t.closingSavedAt).toLocaleString('en-GB',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'}):'')
         +'</div></div>';
     });
     out.innerHTML=html;
@@ -732,7 +732,7 @@ async function loadClosing(){
 async function loadUsers(){
   var tb=document.getElementById('uBody');
   var fS=document.getElementById('uFilterStation').value, q=document.getElementById('uFilterQ').value.trim().toLowerCase();
-  tb.innerHTML='<tr><td colspan="6" class="mut">Load ho raha hai…</td></tr>';
+  tb.innerHTML='<tr><td colspan="6" class="mut">Loading…</td></tr>';
   try{
     var users=await fsQuery('users',null,{field:'createdAt',dir:'DESCENDING'},200);
     users=users.filter(function(u){
@@ -748,20 +748,20 @@ async function loadUsers(){
         +'</select> <button class="btn danger sm" onclick="delUser(\''+u.phone+'\')">Delete</button></td>';
       tb.appendChild(tr);
     });
-    if(!users.length) tb.innerHTML='<tr><td colspan="6" class="mut">Koi staff nahi mila.</td></tr>';
+    if(!users.length) tb.innerHTML='<tr><td colspan="6" class="mut">No staff found.</td></tr>';
   }catch(e){ tb.innerHTML='<tr><td colspan="6">Error: '+esc(e.message)+'</td></tr>'; }
   loadAttSummary();
 }
 async function loadAttSummary(){
   var el=document.getElementById('attSum');
   var date=todayKey();
-  el.innerHTML='<div class="spinner" style="padding:16px">Load ho raha hai…</div>';
+  el.innerHTML='<div class="spinner" style="padding:16px">Loading…</div>';
   try{
     var recs=await fsQuery('records',{field:'date',value:date},null,100);
     var withAtt=recs.filter(function(r){return r.attendance;});
-    if(!withAtt.length){ el.innerHTML='<span class="mut">Aaj kisi station se attendance nahi ayi.</span>'; return; }
+    if(!withAtt.length){ el.innerHTML='<span class="mut">No attendance received from any station today.</span>'; return; }
     withAtt.sort(function(a,b){ return (a.stationId+a.shift)<(b.stationId+b.shift)?-1:1; });
-    var html='<div style="overflow:auto;"><table class="dt"><thead><tr><th>Station</th><th>Shift</th><th>Present</th><th>Total</th><th>Absent</th><th>Off</th><th>Leave</th><th>OT</th><th>Bheja</th></tr></thead><tbody>';
+    var html='<div style="overflow:auto;"><table class="dt"><thead><tr><th>Station</th><th>Shift</th><th>Present</th><th>Total</th><th>Absent</th><th>Off</th><th>Leave</th><th>OT</th><th>Sent by</th></tr></thead><tbody>';
     withAtt.forEach(function(r){
       var a=r.attendance;
       html+='<tr><td><b>'+esc(r.stationName||stName(r.stationId))+'</b></td><td>'+shiftPill(r.shift)+'</td>'
@@ -773,7 +773,7 @@ async function loadAttSummary(){
 }
 async function addUser(){
   var name=document.getElementById('uName').value.trim(), phone=document.getElementById('uPhone').value.replace(/\D/g,'');
-  if(!name||phone.length<10){ alert('Naam aur sahi number likhein'); return; }
+  if(!name||phone.length<10){ alert('Enter a name and a valid number'); return; }
   try{
     await fsSet('users/'+phone,{name:name,phone:phone,station:document.getElementById('uStation').value,
       shift:document.getElementById('uShift').value,role:document.getElementById('uRole').value,createdAt:new Date().toISOString()});
@@ -782,13 +782,13 @@ async function addUser(){
   }catch(e){ alert('Error: '+e.message); }
 }
 async function setRole(phone,role){
-  if(!confirm(phone+' ka role '+role+' kar dun?')){ loadUsers(); return; }
+  if(!confirm('Change role of '+phone+' to '+role+'?')){ loadUsers(); return; }
   try{ await fsPatch('users/'+phone,{role:role}); loadUsers(); }
   catch(e){ alert('Error: '+e.message); loadUsers(); }
 }
 async function delUser(phone){
-  if(phone===adminPhone){ alert('Khud ko delete nahi kar sakte'); return; }
-  if(!confirm(phone+' ko delete kar dun?')) return;
+  if(phone===adminPhone){ alert('You cannot delete yourself'); return; }
+  if(!confirm('Delete '+phone+'?')) return;
   try{ await fsDelete('users/'+phone); loadUsers(); }
   catch(e){ alert('Error: '+e.message); }
 }
@@ -797,21 +797,21 @@ async function delUser(phone){
 async function loadPhotos(){
   var sid=document.getElementById('phStation').value, shift=document.getElementById('phShift').value, date=document.getElementById('phDate').value;
   var grid=document.getElementById('phGrid');
-  grid.innerHTML='<div class="mut">Load ho raha hai…</div>';
+  grid.innerHTML='<div class="mut">Loading…</div>';
   try{
     var list;
-    if(date) list=await fsQuery('photos',{field:'date',value:date},null,100);
-    else list=await fsQuery('photos',{field:'date',value:todayKey()},null,100);
+    if(date) list=await fsQueryWithIds('photos',{field:'date',value:date},null,100);
+    else list=await fsQueryWithIds('photos',{field:'date',value:todayKey()},null,100);
     list=list.filter(function(p){ return (!sid||p.stationId===sid)&&(!shift||p.shift===shift); });
     list.sort(function(a,b){ return (b.ts||0)-(a.ts||0); });
     list=list.slice(0,60);
-    if(!list.length){ grid.innerHTML='<div class="empty">Koi photo nahi mili.<br><span class="mut">Filter badal ke dekhein.</span></div>'; return; }
+    if(!list.length){ grid.innerHTML='<div class="empty">No photos found.<br><span class="mut">Try changing the filters.</span></div>'; return; }
     grid.innerHTML='';
     list.forEach(function(p){
       var c=document.createElement('div'); c.className='ph';
       var when=p.ts?new Date(p.ts).toLocaleString('en-GB',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'}):'—';
       c.innerHTML='<img loading="lazy" src="'+esc(p.thumb)+'"><div><b>'+esc(p.stationName||stName(p.stationId))+'</b> · '+esc(p.shift||'')
-        +'<br>'+when+(p.byName?'<br>'+esc(p.byName):'')+(p.address?'<br>'+esc(p.address):'')+'</div>';
+        +'<br>'+when+(p.byName?'<br>'+esc(p.byName):'')+(p.address?'<br>'+esc(p.address):'')+'<br><button class="btn danger sm" style="margin-top:6px" onclick="event.stopPropagation();delPhoto(\''+esc(p._docId||'')+'\')">Delete</button></div>';
       c.onclick=function(){
         document.getElementById('lbImg').src=p.thumb;
         document.getElementById('lbCap').textContent=(p.stationName||stName(p.stationId))+' · '+(p.shift||'')+' · '+when;
@@ -835,6 +835,37 @@ function filterStations(q){
     var nm=rows[i].querySelector('.nm');
     rows[i].style.display=(!nm||nm.textContent.toLowerCase().indexOf(q)>=0)?'':'none';
   }
+}
+
+/* ================= v8 — DELETE HELPERS =================
+   Photo / station-record delete. Main logic above untouched. */
+async function fsQueryWithIds(coll, filter, orderBy, limit){
+  var sq={from:[{collectionId:coll}]};
+  if(filter) sq.where={fieldFilter:{field:{fieldPath:filter.field},op:filter.op||'EQUAL',value:toFS(filter.value)}};
+  if(orderBy) sq.orderBy=[{field:{fieldPath:orderBy.field},direction:orderBy.dir||'DESCENDING'}];
+  if(limit) sq.limit=limit;
+  var r=await fetchT(FS+':runQuery',{method:'POST',headers:fsH(),body:JSON.stringify({structuredQuery:sq})},25000);
+  if(!r.ok) throw new Error('Query error '+r.status);
+  var arr=await r.json();
+  return arr.filter(function(x){return x.document;}).map(function(x){
+    var d=docData(x.document);
+    d._docId=(x.document.name||'').split('/').pop();
+    return d;
+  });
+}
+async function delPhoto(docId){
+  if(!docId) return;
+  if(!confirm('Delete this photo permanently?')) return;
+  try{ await fsDelete('photos/'+docId); loadPhotos(); }
+  catch(e){ alert('Error: '+e.message); }
+}
+async function delRecord(stationId, shift, date){
+  if(!stationId||!shift||!date) return;
+  if(!confirm('Delete record for '+stName(stationId)+' ('+shift+', '+date+') permanently?')) return;
+  try{
+    await fsDelete('records/'+stationId+'_'+shift+'_'+date);
+    loadOpening(); loadClosing(); loadDashboard();
+  }catch(e){ alert('Error: '+e.message); }
 }
 </script>
 
