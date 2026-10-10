@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.6",
-  "versionCode": 107,
+  "versionName": "1.1.7",
+  "versionCode": 108,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Portal header polish + Auto Fill always + welcome card no-popup",
-  "updatedAt": "2026-10-11T00:31:00+05:00"
+  "notes": "Resume update check + Auto Fill logic + smooth portal header",
+  "updatedAt": "2026-10-11T00:41:00+05:00"
 }
