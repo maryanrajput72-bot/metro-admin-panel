@@ -81,30 +81,16 @@
   select:focus,input:focus{outline:none;border-color:var(--lime);box-shadow:0 0 0 3px rgba(198,241,53,.15);}
   input::placeholder{color:#5b6486;}
 
-  /* ===== KPI stat cards (dark) ===== */
-  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin-bottom:22px;}
-  .chip{background:linear-gradient(165deg,#161c33 0%,#0d1222 100%);border:1px solid rgba(255,255,255,.09);border-radius:20px;padding:20px;
-    display:grid;grid-template-columns:56px 1fr;gap:4px 16px;align-items:center;position:relative;overflow:hidden;
-    box-shadow:0 12px 30px rgba(0,0,0,.38);transition:transform .16s,box-shadow .16s,border-color .16s;}
-  .chip:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.18);box-shadow:0 18px 38px rgba(0,0,0,.45);}
-  .chip::before{content:'';width:56px;height:56px;border-radius:17px;background-repeat:no-repeat;background-position:center;background-size:27px;grid-row:1/3;
-    box-shadow:inset 0 1px 0 rgba(255,255,255,.12);}
-  .chip::after{content:'';position:absolute;left:0;right:0;top:0;height:3px;opacity:.9;}
-  .chip:nth-child(1)::after{background:linear-gradient(90deg,var(--lime),transparent);}
-  .chip:nth-child(2)::after{background:linear-gradient(90deg,#7aa2ff,transparent);}
-  .chip:nth-child(3)::after{background:linear-gradient(90deg,#C6F135,transparent);}
-  .chip:nth-child(4)::after{background:linear-gradient(90deg,#f5a623,transparent);}
-  .chip:nth-child(5)::after{background:linear-gradient(90deg,#ff8a7a,transparent);}
-  .chip:nth-child(6)::after{background:linear-gradient(90deg,#8B94B3,transparent);}
-  .chip b{font-size:26px;font-weight:800;display:block;letter-spacing:-.6px;line-height:1.2;color:#fff;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
-  .chip span{font-size:12.5px;font-weight:600;color:#cfd6ea;display:block;letter-spacing:.1px;}
-  .chip small{font-size:11px;color:var(--dmut);display:block;margin-top:1px;}
-  #dbChips .chip:nth-child(1)::before{background-color:var(--lime-soft);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C6F135' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='6' width='20' height='12' rx='2'/%3E%3Ccircle cx='12' cy='12' r='2.6'/%3E%3Cpath d='M5.6 9.5h.01M18.4 14.5h.01'/%3E%3C/svg%3E");}
-  #dbChips .chip:nth-child(2)::before{background-color:rgba(64,110,255,.14);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237aa2ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2'/%3E%3Ccircle cx='9' cy='7' r='4'/%3E%3Cpath d='M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75'/%3E%3C/svg%3E");}
-  #dbChips .chip:nth-child(3)::before{background-color:var(--lime-soft);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C6F135' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M22 11.08V12a10 10 0 1 1-5.93-9.14'/%3E%3Cpolyline points='22 4 12 14.01 9 11.01'/%3E%3C/svg%3E");}
-  #dbChips .chip:nth-child(4)::before{background-color:rgba(217,126,0,.14);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f5a623' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpolyline points='12 6 12 12 16 14'/%3E%3C/svg%3E");}
-  #dbChips .chip:nth-child(5)::before{background-color:rgba(207,58,40,.14);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ff8a7a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cline x1='8' y1='12' x2='16' y2='12'/%3E%3C/svg%3E");}
-  #dbChips .chip:nth-child(6)::before{background-color:rgba(255,255,255,.06);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238B94B3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='8' y1='6' x2='21' y2='6'/%3E%3Cline x1='8' y1='12' x2='21' y2='12'/%3E%3Cline x1='8' y1='18' x2='21' y2='18'/%3E%3Cline x1='3' y1='6' x2='3.01' y2='6'/%3E%3Cline x1='3' y1='12' x2='3.01' y2='12'/%3E%3Cline x1='3' y1='18' x2='3.01' y2='18'/%3E%3C/svg%3E");}
+  /* ===== HERO stat cards (dark, reference style) ===== */
+  .heros{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:22px;}
+  .hero{background:linear-gradient(165deg,#161c33 0%,#0d1222 100%);border:1px solid rgba(255,255,255,.09);border-radius:20px;
+    padding:22px 22px 20px;position:relative;overflow:hidden;box-shadow:0 12px 30px rgba(0,0,0,.38);transition:transform .16s,border-color .16s;}
+  .hero:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.18);}
+  .hero::after{content:'';position:absolute;left:22px;bottom:0;width:46px;height:3px;border-radius:3px;background:var(--lime);}
+  .hero .hl{font-size:11.5px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--dmut);margin-bottom:10px;}
+  .hero .hv{font-size:32px;font-weight:800;letter-spacing:-.8px;color:#fff;line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .hero .hv.lime{color:var(--lime);}
+  .hero .hs{font-size:12px;color:var(--dmut);margin-top:8px;padding-bottom:8px;}
 
   /* ===== WHITE panel (main content, like screenshot) ===== */
   .panel{background:#fff;border-radius:22px;color:var(--ink);box-shadow:var(--shadow-lg);overflow:hidden;margin-bottom:18px;}
@@ -120,30 +106,38 @@
   .legend{display:flex;gap:6px;align-items:center;flex-wrap:wrap;}
 
   /* station rows inside white panel */
-  .stable-head{display:grid;grid-template-columns:2fr 1fr 1fr 1.15fr .95fr;gap:8px;padding:12px 22px;font-size:11px;font-weight:700;
-    text-transform:uppercase;letter-spacing:.7px;color:var(--th);border-bottom:1px solid var(--line);}
-  #dbGrid .st{display:grid;grid-template-columns:2fr 1fr 1fr 1.15fr .95fr;gap:8px;align-items:center;padding:13px 22px;border-bottom:1px solid var(--line-soft);cursor:pointer;background:#fff;transition:background .12s;}
-  #dbGrid .st:last-child{border-bottom:none;}
-  #dbGrid .st:hover{background:#f8fafc;}
-  #dbGrid .nm{font-size:14.5px;font-weight:700;letter-spacing:-.2px;display:flex;align-items:center;gap:11px;color:var(--ink);}
   .st-av{width:34px;height:34px;border-radius:50%;flex:none;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#fff;
     background:linear-gradient(135deg,#2b3a67,#141b33);}
   .st-av.sm{width:28px;height:28px;font-size:11px;}
-  #dbGrid .shrow{display:contents;}
-  #dbGrid .shrow>span{font-size:0;display:flex;align-items:center;}
-  #dbGrid .shrow .dot{height:26px;border-radius:999px;padding:0 13px;margin:0;display:inline-flex;align-items:center;}
-  #dbGrid .shrow .dot::after{font-size:12px;font-weight:700;line-height:1;}
-  #dbGrid .shrow .dot.g{background:#e6f6ec;} #dbGrid .shrow .dot.g::after{content:'Complete';color:#008f46;}
-  #dbGrid .shrow .dot.a{background:#fdf3e0;} #dbGrid .shrow .dot.a::after{content:'Incomplete';color:#b26a00;}
-  #dbGrid .shrow .dot.n{background:#eef1f6;} #dbGrid .shrow .dot.n::after{content:'Empty';color:#8a93a8;}
-  #dbGrid .nums{display:contents;}
-  #dbGrid .cash{font-size:14.5px;font-weight:800;color:var(--ink);text-align:right;letter-spacing:-.3px;}
-  #dbGrid .nums .staffn{font-size:12.5px;color:var(--mut);}
-  #dbGrid .st>.staffn{grid-column:1/-1;font-size:12px;color:var(--mut);}
+  /* ===== dashboard: station list + dark detail card (reference style) ===== */
+  .dash-split{display:grid;grid-template-columns:1fr 360px;min-height:430px;}
+  .dash-list{border-right:1px solid var(--line-soft);background:#fff;}
+  .strow{display:flex;align-items:center;gap:13px;padding:13px 22px;border-bottom:1px solid var(--line-soft);cursor:pointer;transition:background .12s;background:#fff;}
+  .strow:last-child{border-bottom:none;}
+  .strow:hover{background:#f7fafc;}
+  .strow.sel{background:#f1f8e4;box-shadow:inset 3px 0 0 var(--lime);}
+  .strow .nm{font-size:14.5px;font-weight:700;color:var(--ink);letter-spacing:-.2px;}
+  .strow .meta{margin-left:auto;text-align:right;flex:none;}
+  .strow .cash{font-size:14.5px;font-weight:800;color:var(--ink);letter-spacing:-.3px;}
+  .strow .staffn{font-size:12px;color:var(--mut);margin-top:2px;}
+  .sdots{display:flex;gap:6px;margin-top:5px;flex-wrap:wrap;}
+  .dot{height:24px;border-radius:999px;padding:0 12px;display:inline-flex;align-items:center;font-size:11.5px;font-weight:700;white-space:nowrap;}
+  .dot.g{background:#e6f6ec;color:#008f46;} .dot.a{background:#fdf3e0;color:#b26a00;} .dot.n{background:#eef1f6;color:#8a93a8;}
+  .dash-detail{padding:18px;background:#eef1f7;}
+  .dcard-dark{background:linear-gradient(165deg,#18203a 0%,#0e1322 100%);border-radius:18px;padding:22px;color:#fff;height:100%;
+    box-shadow:0 14px 34px rgba(10,14,26,.35);border:1px solid rgba(255,255,255,.08);}
+  .dcard-dark .dl{font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--dmut);margin-bottom:6px;}
+  .dcard-dark .dn{font-size:22px;font-weight:800;letter-spacing:-.5px;margin-bottom:14px;color:#fff;}
+  .dcard-dark .drow{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:11px 0;border-top:1px solid rgba(255,255,255,.08);font-size:13.5px;}
+  .dcard-dark .drow .k{color:var(--dmut);}
+  .dcard-dark .drow .v{font-weight:700;color:#fff;}
+  .dcard-dark .dbig{font-size:24px;font-weight:800;color:var(--lime);letter-spacing:-.6px;}
+  .dcard-dark .dby{font-size:12.5px;color:var(--dmut);margin-top:14px;line-height:1.6;}
+  .dcard-dark .btn{width:100%;margin-top:16px;}
   #dbGrid>.spinner,#dbGrid>.empty{padding:36px 22px;text-align:center;}
 
   /* ===== dark filter card ===== */
-  .dcard{background:linear-gradient(160deg,var(--dcard),#10162b);border:1px solid var(--dline);border-radius:var(--radius);padding:18px;margin-bottom:18px;}
+  .dcard{background:linear-gradient(160deg,var(--dcard),#10162b);border:1px solid var(--dline);border-radius:20px;padding:18px;margin-bottom:18px;}
   .filters{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
   .filters .btn{margin-left:auto;}
 
@@ -253,14 +247,13 @@
     .pagehead h2{font-size:24px;}
   }
   @media(max-width:640px){
-    .kpis{grid-template-columns:repeat(2,1fr);gap:10px;}
-    .chip{padding:14px;}
-    .chip b{font-size:17px;}
-    .stable-head{display:none;}
-    #dbGrid .st{grid-template-columns:1fr 1fr;row-gap:10px;padding:14px 18px;}
-    #dbGrid .nm{grid-column:1/-1;}
-    #dbGrid .st>.staffn{grid-column:1/-1;}
-    #dbGrid .cash{text-align:left;}
+    .heros{grid-template-columns:repeat(2,1fr);gap:10px;}
+    .hero{padding:16px;}
+    .hero .hv{font-size:22px;}
+    .hero::after{left:16px;}
+    .dash-split{grid-template-columns:1fr;}
+    .dash-list{border-right:none;border-bottom:1px solid var(--line-soft);}
+    .strow{padding:12px 16px;}
     .wrap{padding:20px 14px 60px;}
     .panelhead{padding:15px 16px;}
     .card{padding:16px;}
@@ -277,7 +270,7 @@
     <div class="logo">M+</div>
     <h2>Metro+ Admin</h2>
     <p class="tagline">Staff system control room</p>
-    <span class="ver">v9</span>
+    <span class="ver">v11</span>
     <input type="text" id="loginPhone" inputmode="numeric" maxlength="11" placeholder="Enter your mobile number">
     <button class="btn" id="loginBtn" disabled style="opacity:.55" onclick="doLogin()">Connecting…</button>
     <div class="status" id="connStatus">Connecting to server…</div>
@@ -316,7 +309,7 @@
           <button class="btn sm" onclick="loadDashboard()">Refresh</button>
         </div>
       </div>
-      <div class="kpis" id="dbChips"></div>
+      <div class="heros" id="dbChips"></div>
       <div class="panel">
         <div class="panelhead">
           <h3>Station status</h3>
@@ -328,8 +321,10 @@
           </div>
           <input type="text" id="dbSearch" class="search" placeholder="Search station…" oninput="filterStations(this.value)">
         </div>
-        <div class="stable-head"><span>Station</span><span>Morning</span><span>Evening</span><span style="text-align:right">Collection</span><span>Staff</span></div>
-        <div id="dbGrid"></div>
+        <div class="dash-split">
+          <div class="dash-list" id="dbGrid"></div>
+          <div class="dash-detail"><div class="dcard-dark" id="dbDetail"></div></div>
+        </div>
       </div>
     </section>
 
@@ -771,6 +766,7 @@ async function loadDashboard(){
     recs.forEach(function(r){ map[r.stationId+'_'+r.shift]=r; });
     var full=0, part=0, totalCash=0, totalStaff=0;
     var html='';
+    var stData={};
     STATIONS.forEach(function(s){
       var m=map[s.id+'_Morning'], e=map[s.id+'_Evening'];
       var dm=shiftDot(m), de=shiftDot(e);
@@ -783,25 +779,42 @@ async function loadDashboard(){
         if(r.byName) who.push(r.byName);
       });
       totalCash+=cash; totalStaff+=staff;
-      html+='<div class="st" onclick="jumpStation(\''+s.id+'\',\''+date+'\')">'
-        +'<div class="nm">'+stAv(s.name)+esc(s.name)+'</div>'
-        +'<div class="shrow"><span><span class="dot '+dm+'"></span>Morning</span><span><span class="dot '+de+'"></span>Evening</span></div>'
-        +'<div class="nums"><div class="cash">'+money(cash)+'</div><div class="staffn">'+staff+' staff</div></div>'
-        +(who.length?'<div class="staffn" style="margin-top:4px">'+esc(who.slice(0,2).join(' · '))+'</div>':'')
+      stData[s.id]={name:s.name,dm:dm,de:de,cash:cash,staff:staff,who:who};
+      html+='<div class="strow" data-sid="'+s.id+'" onclick="selectStation(\''+s.id+'\')">'
+        +stAv(s.name)
+        +'<div><div class="nm">'+esc(s.name)+'</div>'
+        +'<div class="sdots"><span class="dot '+dm+'">Morning</span><span class="dot '+de+'">Evening</span></div></div>'
+        +'<div class="meta"><div class="cash">'+money(cash)+'</div><div class="staffn">'+staff+' staff</div></div>'
         +'</div>';
     });
+    dbStationData=stData;
     grid.innerHTML=html;
     filterStations(document.getElementById('dbSearch').value);
+    selectStation(STATIONS[0].id);
     document.getElementById('dbChips').innerHTML=
-      '<div class="chip"><b style="color:var(--lime)">'+money(totalCash)+'</b><span>Total Collection</span><small>'+date+'</small></div>'
-      +'<div class="chip"><b>'+totalStaff+'</b><span>Staff Present</span><small>across stations</small></div>'
-      +'<div class="chip"><b style="color:var(--lime)">'+full+'</b><span>Complete Stations</span><small>both shifts done</small></div>'
-      +'<div class="chip"><b style="color:#f5a623">'+part+'</b><span>Incomplete Stations</span><small>one shift missing</small></div>'
-      +'<div class="chip"><b style="color:#ff8a7a">'+(24-full-part)+'</b><span>Empty Stations</span><small>no data yet</small></div>'
-      +'<div class="chip"><b>'+recs.length+'</b><span>Total Records</span><small>synced from app</small></div>';
+      '<div class="hero"><div class="hl">Total Collection</div><div class="hv lime">'+money(totalCash)+'</div><div class="hs">'+date+'</div></div>'
+      +'<div class="hero"><div class="hl">Complete Stations</div><div class="hv">'+full+'<span style="font-size:15px;color:var(--dmut)"> / 24</span></div><div class="hs">both shifts done</div></div>'
+      +'<div class="hero"><div class="hl">Staff Present</div><div class="hv">'+totalStaff+'</div><div class="hs">across stations</div></div>'
+      +'<div class="hero"><div class="hl">Total Records</div><div class="hv">'+recs.length+'</div><div class="hs">synced from app</div></div>';
   }catch(e){
     grid.innerHTML='<div class="empty">Error: '+esc(e.message)+'</div>';
+    document.getElementById('dbDetail').innerHTML='';
   }
+}
+var dbStationData={};
+function dotWord(d){ return d==='g'?'Complete':(d==='a'?'Incomplete':'Empty'); }
+function selectStation(sid){
+  var d=dbStationData[sid]; if(!d) return;
+  var rows=document.querySelectorAll('#dbGrid .strow');
+  for(var i=0;i<rows.length;i++) rows[i].classList.toggle('sel', rows[i].getAttribute('data-sid')===sid);
+  document.getElementById('dbDetail').innerHTML=
+    '<div class="dl">Station</div><div class="dn">'+esc(d.name)+'</div>'
+    +'<div class="drow"><span class="k">Morning</span><span class="dot '+d.dm+'">'+dotWord(d.dm)+'</span></div>'
+    +'<div class="drow"><span class="k">Evening</span><span class="dot '+d.de+'">'+dotWord(d.de)+'</span></div>'
+    +'<div class="drow"><span class="k">Collection</span><span class="dbig">'+money(d.cash)+'</span></div>'
+    +'<div class="drow"><span class="k">Staff present</span><span class="v">'+d.staff+'</span></div>'
+    +(d.who.length?'<div class="dby">Sent by: '+esc(d.who.slice(0,2).join(' · '))+'</div>':'<div class="dby">No data submitted yet.</div>')
+    +'<button class="btn sm" onclick="jumpStation(\''+sid+'\',\''+document.getElementById('dbDate').value+'\')">View closing &rarr;</button>';
 }
 function jumpStation(sid,date){
   showTab('closing');
@@ -811,7 +824,7 @@ function jumpStation(sid,date){
 }
 function filterStations(q){
   q=(q||'').toLowerCase();
-  var rows=document.querySelectorAll('#dbGrid .st');
+  var rows=document.querySelectorAll('#dbGrid .strow');
   for(var i=0;i<rows.length;i++){
     var nm=rows[i].querySelector('.nm');
     var okName=(!nm||nm.textContent.toLowerCase().indexOf(q)>=0);
