@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.0.88",
-  "versionCode": 89,
+  "versionName": "1.0.89",
+  "versionCode": 90,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "TRUE silent auto-update: Android 12+ self-update installs with zero taps",
-  "updatedAt": "2026-10-10T19:29:00+05:00"
+  "notes": "Force update modal: centered card, blurred background, blocking until installed",
+  "updatedAt": "2026-10-10T19:38:00+05:00"
 }
