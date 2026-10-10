@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.0.86",
-  "versionCode": 87,
+  "versionName": "1.0.87",
+  "versionCode": 88,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "PackageInstaller API — system install dialog, no notification tap",
-  "updatedAt": "2026-10-10T19:02:00+05:00"
+  "notes": "Smoothness: hardware acceleration, DOM cache, input debounce",
+  "updatedAt": "2026-10-10T19:18:00+05:00"
 }
