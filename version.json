@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.4",
-  "versionCode": 105,
+  "versionName": "1.1.5",
+  "versionCode": 106,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Home carousel: Welcome + Money Calc + Tom Data + GPS + Portal",
-  "updatedAt": "2026-10-11T00:10:00+05:00"
+  "notes": "GPS camera: fullscreen, HD, full preview, white WhatsApp popup",
+  "updatedAt": "2026-10-11T00:13:00+05:00"
 }
