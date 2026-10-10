@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.0.91",
-  "versionCode": 92,
+  "versionName": "1.0.92",
+  "versionCode": 93,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Fix: update popup button now starts download directly (no Settings loop)",
-  "updatedAt": "2026-10-10T20:20:00+05:00"
+  "notes": "Fix: lock image visible, WhatsApp message with full profile data",
+  "updatedAt": "2026-10-10T20:30:00+05:00"
 }
