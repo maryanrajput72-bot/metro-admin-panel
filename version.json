@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.0.84",
-  "versionCode": 85,
+  "versionName": "1.0.85",
+  "versionCode": 86,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Auto-install popup on download complete (no notification tap needed)",
-  "updatedAt": "2026-10-10T15:48:00+05:00"
+  "notes": "Closing manual-save fix + WhatsApp smart format parser",
+  "updatedAt": "2026-10-10T18:20:00+05:00"
 }
