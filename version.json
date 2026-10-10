@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.7",
-  "versionCode": 108,
+  "versionName": "1.1.8",
+  "versionCode": 109,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Resume update check + Auto Fill logic + smooth portal header",
-  "updatedAt": "2026-10-11T00:41:00+05:00"
+  "notes": "Auto Fill two-step login + app relaunch after update",
+  "updatedAt": "2026-10-11T00:50:00+05:00"
 }
