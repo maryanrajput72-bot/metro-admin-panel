@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.0.95",
-  "versionCode": 96,
+  "versionName": "1.0.96",
+  "versionCode": 97,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Profile modal blink fix (blur removed), Welcome kicker removed",
-  "updatedAt": "2026-10-10T20:58:00+05:00"
+  "notes": "Profile v2: Edit mode + pretty station picker cards (no more black dropdown)",
+  "updatedAt": "2026-10-10T22:30:00+05:00"
 }
