@@ -270,7 +270,7 @@
     <div class="logo">M+</div>
     <h2>Metro+ Admin</h2>
     <p class="tagline">Staff system control room</p>
-    <span class="ver">v11</span>
+    <span class="ver">v12</span>
     <input type="text" id="loginPhone" inputmode="numeric" maxlength="11" placeholder="Enter your mobile number">
     <button class="btn" id="loginBtn" disabled style="opacity:.55" onclick="doLogin()">Connecting…</button>
     <div class="status" id="connStatus">Connecting to server…</div>
@@ -644,7 +644,18 @@ async function doLogin(){
       setBusy(false);
       showErr('This number is not registered — contact an admin first.'); return;
     }
-    if(u.role!=='admin'){ setBusy(false); showErr('This number is not an admin (role: '+u.role+').'); return; }
+    if(u.role!=='admin'){
+      setBusy(false);
+      try{
+        var admins=await fsQuery('users',{field:'role',value:'admin'},null,1);
+        if(!admins.length){
+          errBox.style.display='block'; errBox.style.background='rgba(198,241,53,.10)'; errBox.style.border='1px solid rgba(198,241,53,.4)'; errBox.style.color='#C6F135';
+          errBox.innerHTML='No admin found yet.<br><button class="btn" style="margin-top:10px;width:100%" onclick="claimAdminUpgrade(\''+phone+'\')">Make this number ('+phone+') ADMIN</button>';
+          return;
+        }
+      }catch(e){}
+      showErr('This number is not an admin (role: '+u.role+').'); return;
+    }
     enterApp(phone, u.name);
   }catch(e){ setBusy(false); showErr('Error: '+e.message); }
 }
@@ -653,6 +664,14 @@ async function claimAdmin(phone){
   try{
     await fsSet('users/'+phone,{name:'Admin',phone:phone,station:'',shift:'',role:'admin',createdAt:new Date().toISOString()});
     enterApp(phone,'Admin');
+  }catch(e){ setBusy(false); showErr('Error making admin: '+e.message); }
+}
+async function claimAdminUpgrade(phone){
+  setBusy(true);
+  try{
+    await fsPatch('users/'+phone,{role:'admin',phone:phone});
+    var u=await fsGet('users/'+phone);
+    enterApp(phone,(u&&u.name)||'Admin');
   }catch(e){ setBusy(false); showErr('Error making admin: '+e.message); }
 }
 function enterApp(phone, name){
