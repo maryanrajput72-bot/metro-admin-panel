@@ -33,13 +33,17 @@
   .mut{color:var(--mut);font-size:13px;}
 
   /* ===== top bar ===== */
-  .topbar{position:sticky;top:0;z-index:60;background:rgba(13,18,38,.86);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
-    border-bottom:1px solid var(--dline);padding:12px 24px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
+  .topbar{position:sticky;top:12px;z-index:60;margin:12px 16px 0;
+    background:linear-gradient(165deg,rgba(24,30,54,.97),rgba(13,18,34,.97));
+    backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.12);border-radius:22px;
+    padding:10px 20px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+    box-shadow:0 18px 44px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.08);}
   .brand{display:flex;align-items:center;gap:11px;flex:none;}
-  .mark{width:40px;height:40px;border-radius:13px;background:linear-gradient(135deg,var(--lime),#7fb800);color:#0B0F1E;font-weight:900;font-size:15px;
-    display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(198,241,53,.28);}
-  .word{font-weight:800;font-size:17px;letter-spacing:-.4px;color:#fff;}
-  .word small{display:block;font-size:10px;font-weight:700;letter-spacing:2.2px;color:var(--lime);}
+  .mark{width:44px;height:44px;border-radius:15px;background:linear-gradient(135deg,var(--lime),#7fb800);color:#0B0F1E;font-weight:900;font-size:16px;
+    display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(198,241,53,.35);}
+  .word{font-weight:800;font-size:18px;letter-spacing:-.4px;color:#fff;}
+  .word small{display:block;font-size:10px;font-weight:700;letter-spacing:2.4px;color:var(--lime);}
   .tabbar{display:flex;gap:6px;flex:1 1 auto;justify-content:center;align-items:center;overflow-x:auto;scrollbar-width:none;
     background:none;border:none;border-radius:0;padding:0;max-width:none;margin:0;}
   .tabbar::-webkit-scrollbar{display:none;}
@@ -253,7 +257,7 @@
 
   @media(max-width:900px){
     .tabbar{order:3;flex-basis:100%;max-width:none;justify-content:flex-start;padding:2px 0;}
-    .topbar{gap:12px;padding:12px 16px;}
+    .topbar{gap:12px;padding:10px 14px;margin:10px 10px 0;border-radius:18px;}
     small.date{display:none;}
     .pagehead h2{font-size:24px;}
   }
@@ -281,7 +285,7 @@
     <div class="logo">M+</div>
     <h2>Metro+ Admin</h2>
     <p class="tagline">Staff system control room</p>
-    <span class="ver">v14</span>
+    <span class="ver">v15</span>
     <input type="text" id="loginPhone" inputmode="numeric" maxlength="11" placeholder="Enter your mobile number">
     <button class="btn" id="loginBtn" disabled style="opacity:.55" onclick="doLogin()">Connecting…</button>
     <div class="status" id="connStatus">Connecting to server…</div>
