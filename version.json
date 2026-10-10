@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.10",
-  "versionCode": 111,
+  "versionName": "1.1.11",
+  "versionCode": 112,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Data-fill modal: pretty clipboard logo + hint fixes",
-  "updatedAt": "2026-10-11T01:07:00+05:00"
+  "notes": "Thank-you card, smooth animations, faster update check",
+  "updatedAt": "2026-10-11T01:11:00+05:00"
 }
