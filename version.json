@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.0.92",
-  "versionCode": 93,
+  "versionName": "1.0.93",
+  "versionCode": 94,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Fix: lock image visible, WhatsApp message with full profile data",
-  "updatedAt": "2026-10-10T20:30:00+05:00"
+  "notes": "Welcome card restyled like Fill TOM Data card (kicker, bold shift, grey subtitle)",
+  "updatedAt": "2026-10-10T20:38:00+05:00"
 }
