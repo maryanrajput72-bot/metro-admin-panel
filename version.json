@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.16",
-  "versionCode": 117,
+  "versionName": "1.1.17",
+  "versionCode": 118,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Station+shift cloud history (today + 3 days) for every TL",
-  "updatedAt": "2026-10-11T01:53:00+05:00"
+  "notes": "GPS video overhaul: hardware H.264, 20fps capture, chunked save (ANR fix); confetti rework",
+  "updatedAt": "2026-10-11T02:08:00+05:00"
 }
