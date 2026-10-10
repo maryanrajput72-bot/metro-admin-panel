@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.0.65",
-  "versionCode": 66,
+  "versionName": "1.0.80",
+  "versionCode": 81,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Nav icons one color, fonts bundled locally, smoother startup",
-  "updatedAt": "2026-10-10T08:41:00+05:00"
+  "notes": "Progress bar card + Install card, largeHeap smoothness",
+  "updatedAt": "2026-10-10T11:30:00+05:00"
 }
