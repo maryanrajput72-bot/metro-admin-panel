@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.9",
-  "versionCode": 110,
+  "versionName": "1.1.10",
+  "versionCode": 111,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Pretty portal login sheet + TOM empty-state card",
-  "updatedAt": "2026-10-11T00:57:00+05:00"
+  "notes": "Data-fill modal: pretty clipboard logo + hint fixes",
+  "updatedAt": "2026-10-11T01:07:00+05:00"
 }
