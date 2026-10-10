@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.3",
-  "versionCode": 104,
+  "versionName": "1.1.4",
+  "versionCode": 105,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Same green M everywhere + install status fix (FLAG_MUTABLE)",
-  "updatedAt": "2026-10-11T00:00:00+05:00"
+  "notes": "Home carousel: Welcome + Money Calc + Tom Data + GPS + Portal",
+  "updatedAt": "2026-10-11T00:10:00+05:00"
 }
