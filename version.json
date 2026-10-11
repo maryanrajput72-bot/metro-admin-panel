@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.34",
-  "versionCode": 135,
+  "versionName": "1.1.35",
+  "versionCode": 136,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Login hints grey, signup station white picker, signup dedup, no auto update popup, Settings profile editor",
-  "updatedAt": "2026-10-11T13:05:00+05:00"
+  "notes": "Signup station picker fix (z-index), Developed by Mr. Aryan footer",
+  "updatedAt": "2026-10-11T12:55:00+05:00"
 }
