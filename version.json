@@ -7,10 +7,10 @@
   "notes": "Main: chat CSS root fix, splash logo original, 5s update check",
   "trial": {
     "testers": ["3526"],
-    "versionName": "1.1.76",
-    "versionCode": 177,
+    "versionName": "1.1.78",
+    "versionCode": 179,
     "apkUrl": "https://drive.usercontent.google.com/download?id=1hlbW5myRlyKCLCwSCpk4m5vjIetmxPpN&export=download&confirm=t",
-    "notes": "Trial: AGM cash card chips"
+    "notes": "Trial: TRIAL badge in Settings"
   },
-  "updatedAt": "2026-10-11T20:30:00+05:00"
+  "updatedAt": "2026-10-11T20:35:00+05:00"
 }
