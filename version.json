@@ -1,10 +1,10 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.61",
-  "versionCode": 162,
+  "versionName": "1.1.72",
+  "versionCode": 173,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "WhatsApp picture fix (direct URI), light app 4.7MB, chat notifications",
+  "notes": "Main: chat CSS root fix, splash logo original, 5s update check",
   "trial": {
     "testers": ["3526"],
     "versionName": "1.1.71",
@@ -12,5 +12,5 @@
     "apkUrl": "https://drive.usercontent.google.com/download?id=1hlbW5myRlyKCLCwSCpk4m5vjIetmxPpN&export=download&confirm=t",
     "notes": "Trial: ROOT FIX chat CSS"
   },
-  "updatedAt": "2026-10-11T19:20:00+05:00"
+  "updatedAt": "2026-10-11T19:25:00+05:00"
 }
