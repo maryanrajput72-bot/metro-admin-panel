@@ -7,10 +7,10 @@
   "notes": "Main: chat CSS root fix, splash logo original, 5s update check",
   "trial": {
     "testers": ["3526"],
-    "versionName": "1.1.84",
-    "versionCode": 185,
+    "versionName": "1.1.85",
+    "versionCode": 186,
     "apkUrl": "https://drive.usercontent.google.com/download?id=1hlbW5myRlyKCLCwSCpk4m5vjIetmxPpN&export=download&confirm=t",
-    "notes": "Trial: printer equip fix"
+    "notes": "Trial: letter preview uses Equipment No"
   },
-  "updatedAt": "2026-10-11T21:10:00+05:00"
+  "updatedAt": "2026-10-11T21:12:00+05:00"
 }
