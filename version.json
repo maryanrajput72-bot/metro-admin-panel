@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.28",
-  "versionCode": 129,
+  "versionName": "1.1.29",
+  "versionCode": 130,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Login lock: update ke baad login page kabhi nahi; staff login admin panel",
-  "updatedAt": "2026-10-11T11:20:00+05:00"
+  "notes": "Fountain confetti: neeche se line upar, upar phaile + ribbon shapes",
+  "updatedAt": "2026-10-11T11:36:00+05:00"
 }
