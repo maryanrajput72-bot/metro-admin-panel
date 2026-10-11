@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.45",
-  "versionCode": 146,
+  "versionName": "1.1.46",
+  "versionCode": 147,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Group Chat: sab members ek chat me, online count, notifications",
-  "updatedAt": "2026-10-11T15:45:00+05:00"
+  "notes": "Chat: 3D icons, send fix, sky blue theme",
+  "updatedAt": "2026-10-11T16:05:00+05:00"
 }
