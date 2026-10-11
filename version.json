@@ -7,10 +7,10 @@
   "notes": "Chat keyboard smooth, message animation",
   "trial": {
     "testers": ["3526"],
-    "versionName": "1.1.53",
-    "versionCode": 154,
+    "versionName": "1.1.54",
+    "versionCode": 155,
     "apkUrl": "https://drive.usercontent.google.com/download?id=1hlbW5myRlyKCLCwSCpk4m5vjIetmxPpN&export=download&confirm=t",
-    "notes": "Trial: chat background notifications + instant open"
+    "notes": "Trial: fast GPS capture, no location popup"
   },
-  "updatedAt": "2026-10-11T17:30:00+05:00"
+  "updatedAt": "2026-10-11T17:40:00+05:00"
 }
