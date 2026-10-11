@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.42",
-  "versionCode": 143,
+  "versionName": "1.1.43",
+  "versionCode": 144,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Bottom nav pe 3D clay icons",
-  "updatedAt": "2026-10-11T15:20:00+05:00"
+  "notes": "Splash locked (original logo + Metro + naam), header purana logo",
+  "updatedAt": "2026-10-11T15:25:00+05:00"
 }
