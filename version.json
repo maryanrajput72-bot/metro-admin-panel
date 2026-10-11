@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.18",
-  "versionCode": 119,
+  "versionName": "1.1.19",
+  "versionCode": 120,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Confetti RAIN (My Earning style, top-down colorful)",
-  "updatedAt": "2026-10-11T02:18:00+05:00"
+  "notes": "Orientation-aware GPS capture (9:16/16:9, smart stamp) + Pichli captures gallery (download/delete/share)",
+  "updatedAt": "2026-10-11T07:32:00+05:00"
 }
