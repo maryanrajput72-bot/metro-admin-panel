@@ -7,10 +7,10 @@
   "notes": "Dual channel, fast GPS, TOM sync, chat notifications",
   "trial": {
     "testers": ["3526"],
-    "versionName": "1.1.55",
-    "versionCode": 156,
+    "versionName": "1.1.56",
+    "versionCode": 157,
     "apkUrl": "https://drive.usercontent.google.com/download?id=1hlbW5myRlyKCLCwSCpk4m5vjIetmxPpN&export=download&confirm=t",
-    "notes": "Trial: WhatsApp URI fix, light app (4.7MB)"
+    "notes": "Trial: instant chat open"
   },
-  "updatedAt": "2026-10-11T17:50:00+05:00"
+  "updatedAt": "2026-10-11T17:55:00+05:00"
 }
