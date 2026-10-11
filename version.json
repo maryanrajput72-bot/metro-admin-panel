@@ -7,10 +7,10 @@
   "notes": "WhatsApp picture fix (direct URI), light app 4.7MB, chat notifications",
   "trial": {
     "testers": ["3526"],
-    "versionName": "1.1.63",
-    "versionCode": 164,
+    "versionName": "1.1.64",
+    "versionCode": 165,
     "apkUrl": "https://drive.usercontent.google.com/download?id=1hlbW5myRlyKCLCwSCpk4m5vjIetmxPpN&export=download&confirm=t",
-    "notes": "Trial: auto-update retry fix"
+    "notes": "Trial: keyboard only where needed"
   },
-  "updatedAt": "2026-10-11T18:35:00+05:00"
+  "updatedAt": "2026-10-11T18:40:00+05:00"
 }
