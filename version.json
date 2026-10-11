@@ -7,10 +7,10 @@
   "notes": "Dual channel, fast GPS, TOM sync, chat notifications",
   "trial": {
     "testers": ["3526"],
-    "versionName": "1.1.60",
-    "versionCode": 161,
+    "versionName": "1.1.61",
+    "versionCode": 162,
     "apkUrl": "https://drive.usercontent.google.com/download?id=1hlbW5myRlyKCLCwSCpk4m5vjIetmxPpN&export=download&confirm=t",
-    "notes": "Trial: force small picture in WhatsApp share"
+    "notes": "Trial: direct URI share (pre-v1.1.40 method)"
   },
-  "updatedAt": "2026-10-11T18:15:00+05:00"
+  "updatedAt": "2026-10-11T18:20:00+05:00"
 }
