@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.35",
-  "versionCode": 136,
+  "versionName": "1.1.36",
+  "versionCode": 137,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Signup station picker fix (z-index), Developed by Mr. Aryan footer",
-  "updatedAt": "2026-10-11T12:55:00+05:00"
+  "notes": "Station picker select fix (stale JS root cause), pastel station cards, no dots",
+  "updatedAt": "2026-10-11T13:20:00+05:00"
 }
