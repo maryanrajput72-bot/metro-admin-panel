@@ -7,10 +7,10 @@
   "notes": "Dual channel, fast GPS, TOM sync, chat notifications",
   "trial": {
     "testers": ["3526"],
-    "versionName": "1.1.56",
-    "versionCode": 157,
+    "versionName": "1.1.57",
+    "versionCode": 158,
     "apkUrl": "https://drive.usercontent.google.com/download?id=1hlbW5myRlyKCLCwSCpk4m5vjIetmxPpN&export=download&confirm=t",
-    "notes": "Trial: instant chat open"
+    "notes": "Trial: notification permission + sound"
   },
-  "updatedAt": "2026-10-11T17:55:00+05:00"
+  "updatedAt": "2026-10-11T18:00:00+05:00"
 }
