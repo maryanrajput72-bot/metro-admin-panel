@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.39",
-  "versionCode": 140,
+  "versionName": "1.1.40",
+  "versionCode": 141,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Splash logo proper set (HD, bara, circular-safe)",
-  "updatedAt": "2026-10-11T14:45:00+05:00"
+  "notes": "GPS preview WhatsApp pe attendance popup; splash fade + bara M logo",
+  "updatedAt": "2026-10-11T15:00:00+05:00"
 }
