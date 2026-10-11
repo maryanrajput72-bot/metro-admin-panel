@@ -1,16 +1,16 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.48",
-  "versionCode": 149,
+  "versionName": "1.1.54",
+  "versionCode": 155,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Chat keyboard smooth, message animation",
+  "notes": "Dual channel, fast GPS, TOM sync, chat notifications",
   "trial": {
     "testers": ["3526"],
     "versionName": "1.1.54",
     "versionCode": 155,
     "apkUrl": "https://drive.usercontent.google.com/download?id=1hlbW5myRlyKCLCwSCpk4m5vjIetmxPpN&export=download&confirm=t",
-    "notes": "Trial: fast GPS capture, no location popup"
+    "notes": "Trial channel"
   },
-  "updatedAt": "2026-10-11T17:40:00+05:00"
+  "updatedAt": "2026-10-11T17:45:00+05:00"
 }
