@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.36",
-  "versionCode": 137,
+  "versionName": "1.1.37",
+  "versionCode": 138,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Station picker select fix (stale JS root cause), pastel station cards, no dots",
-  "updatedAt": "2026-10-11T13:20:00+05:00"
+  "notes": "Profile picture section removed, TL name auto-sync in Settings",
+  "updatedAt": "2026-10-11T13:10:00+05:00"
 }
