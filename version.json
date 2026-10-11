@@ -7,10 +7,10 @@
   "notes": "Chat keyboard smooth, message animation",
   "trial": {
     "testers": ["3526"],
-    "versionName": "1.1.50",
-    "versionCode": 151,
+    "versionName": "1.1.51",
+    "versionCode": 152,
     "apkUrl": "https://drive.usercontent.google.com/download?id=1hlbW5myRlyKCLCwSCpk4m5vjIetmxPpN&export=download&confirm=t",
-    "notes": "Trial: 720p capture, share retry"
+    "notes": "Trial: TRIAL badge + auto-update fix"
   },
-  "updatedAt": "2026-10-11T17:00:00+05:00"
+  "updatedAt": "2026-10-11T17:05:00+05:00"
 }
