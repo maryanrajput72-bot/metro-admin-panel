@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.33",
-  "versionCode": 134,
+  "versionName": "1.1.34",
+  "versionCode": 135,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Login page fix: wider cards, home colors, visible inputs with hints, ghost text fixed + HD splash logo",
-  "updatedAt": "2026-10-11T12:35:00+05:00"
+  "notes": "Login hints grey, signup station white picker, signup dedup, no auto update popup, Settings profile editor",
+  "updatedAt": "2026-10-11T13:05:00+05:00"
 }
