@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.23",
-  "versionCode": 124,
+  "versionName": "1.1.24",
+  "versionCode": 125,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Updater hardening: 20s timeout, native fallback, asal error wajah",
-  "updatedAt": "2026-10-11T10:10:00+05:00"
+  "notes": "Naya login page: hero card + 2-col form, TL ka naam lazmi, glow button",
+  "updatedAt": "2026-10-11T10:36:00+05:00"
 }
