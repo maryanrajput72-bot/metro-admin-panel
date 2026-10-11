@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.30",
-  "versionCode": 131,
+  "versionName": "1.1.31",
+  "versionCode": 132,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Complaints hub home pe (Settings se upar), Closing Time se hata diya",
-  "updatedAt": "2026-10-11T11:41:00+05:00"
+  "notes": "Pretty hub icons + phone back button fix (Complaints/Closing)",
+  "updatedAt": "2026-10-11T11:49:00+05:00"
 }
