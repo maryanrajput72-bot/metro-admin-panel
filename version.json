@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.25",
-  "versionCode": 126,
+  "versionName": "1.1.26",
+  "versionCode": 127,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Confetti celebration: update popup + login pe dono sides blast, 5s",
-  "updatedAt": "2026-10-11T10:53:00+05:00"
+  "notes": "Confetti: uska original — neeche dono sides se upar blast",
+  "updatedAt": "2026-10-11T10:59:00+05:00"
 }
