@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.40",
-  "versionCode": 141,
+  "versionName": "1.1.41",
+  "versionCode": 142,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "GPS preview WhatsApp pe attendance popup; splash fade + bara M logo",
-  "updatedAt": "2026-10-11T15:00:00+05:00"
+  "notes": "Home action cards pe 3D clay icons + 3D M logo",
+  "updatedAt": "2026-10-11T15:15:00+05:00"
 }
