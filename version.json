@@ -7,10 +7,10 @@
   "notes": "Main: chat CSS root fix, splash logo original, 5s update check",
   "trial": {
     "testers": ["3526"],
-    "versionName": "1.1.81",
-    "versionCode": 182,
+    "versionName": "1.1.82",
+    "versionCode": 183,
     "apkUrl": "https://drive.usercontent.google.com/download?id=1hlbW5myRlyKCLCwSCpk4m5vjIetmxPpN&export=download&confirm=t",
-    "notes": "Trial: sticky 5s update check"
+    "notes": "Trial: AGM/TOM chips"
   },
-  "updatedAt": "2026-10-11T20:50:00+05:00"
+  "updatedAt": "2026-10-11T20:55:00+05:00"
 }
