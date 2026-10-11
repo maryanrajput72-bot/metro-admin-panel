@@ -7,10 +7,10 @@
   "notes": "Main: chat CSS root fix, splash logo original, 5s update check",
   "trial": {
     "testers": ["3526"],
-    "versionName": "1.1.74",
-    "versionCode": 175,
+    "versionName": "1.1.75",
+    "versionCode": 176,
     "apkUrl": "https://drive.usercontent.google.com/download?id=1hlbW5myRlyKCLCwSCpk4m5vjIetmxPpN&export=download&confirm=t",
-    "notes": "Trial: TL login in TL Name section"
+    "notes": "Trial: keyboard fix, cash card chip, pretty delete"
   },
-  "updatedAt": "2026-10-11T19:55:00+05:00"
+  "updatedAt": "2026-10-11T20:25:00+05:00"
 }
