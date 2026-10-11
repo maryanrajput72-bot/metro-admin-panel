@@ -7,10 +7,10 @@
   "notes": "WhatsApp picture fix (direct URI), light app 4.7MB, chat notifications",
   "trial": {
     "testers": ["3526"],
-    "versionName": "1.1.68",
-    "versionCode": 169,
+    "versionName": "1.1.69",
+    "versionCode": 170,
     "apkUrl": "https://drive.usercontent.google.com/download?id=1hlbW5myRlyKCLCwSCpk4m5vjIetmxPpN&export=download&confirm=t",
-    "notes": "Trial: revert auto-open chat"
+    "notes": "Trial: chat never auto-opens"
   },
-  "updatedAt": "2026-10-11T19:05:00+05:00"
+  "updatedAt": "2026-10-11T19:10:00+05:00"
 }
