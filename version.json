@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.31",
-  "versionCode": 132,
+  "versionName": "1.1.32",
+  "versionCode": 133,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Pretty hub icons + phone back button fix (Complaints/Closing)",
-  "updatedAt": "2026-10-11T11:49:00+05:00"
+  "notes": "Naya auth: login number+ID, signup page, forgot ID",
+  "updatedAt": "2026-10-11T12:14:00+05:00"
 }
