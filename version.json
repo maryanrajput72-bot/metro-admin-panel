@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.26",
-  "versionCode": 127,
+  "versionName": "1.1.27",
+  "versionCode": 128,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Confetti: uska original — neeche dono sides se upar blast",
-  "updatedAt": "2026-10-11T10:59:00+05:00"
+  "notes": "Confetti upgrade: bottom se top tak blast, 3 naye colors",
+  "updatedAt": "2026-10-11T11:05:00+05:00"
 }
