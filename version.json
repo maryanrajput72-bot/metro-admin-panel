@@ -1,9 +1,9 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.19",
-  "versionCode": 120,
+  "versionName": "1.1.20",
+  "versionCode": 121,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Orientation-aware GPS capture (9:16/16:9, smart stamp) + Pichli captures gallery (download/delete/share)",
-  "updatedAt": "2026-10-11T07:32:00+05:00"
+  "notes": "Preview swipe gallery (pichli captures), WhatsApp+Download+Delete per item",
+  "updatedAt": "2026-10-11T07:42:00+05:00"
 }
