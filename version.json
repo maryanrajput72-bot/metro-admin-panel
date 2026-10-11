@@ -7,10 +7,10 @@
   "notes": "Dual channel, fast GPS, TOM sync, chat notifications",
   "trial": {
     "testers": ["3526"],
-    "versionName": "1.1.58",
-    "versionCode": 159,
+    "versionName": "1.1.59",
+    "versionCode": 160,
     "apkUrl": "https://drive.usercontent.google.com/download?id=1hlbW5myRlyKCLCwSCpk4m5vjIetmxPpN&export=download&confirm=t",
-    "notes": "Trial: notification manifest fix"
+    "notes": "Trial: latest picture guaranteed in share"
   },
-  "updatedAt": "2026-10-11T18:05:00+05:00"
+  "updatedAt": "2026-10-11T18:10:00+05:00"
 }
