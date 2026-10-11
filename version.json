@@ -7,10 +7,10 @@
   "notes": "Main: chat CSS root fix, splash logo original, 5s update check",
   "trial": {
     "testers": ["3526"],
-    "versionName": "1.1.72",
-    "versionCode": 173,
+    "versionName": "1.1.73",
+    "versionCode": 174,
     "apkUrl": "https://drive.usercontent.google.com/download?id=1hlbW5myRlyKCLCwSCpk4m5vjIetmxPpN&export=download&confirm=t",
-    "notes": "Trial: same as main v1.1.72"
+    "notes": "Trial: pretty delete confirm card"
   },
-  "updatedAt": "2026-10-11T19:30:00+05:00"
+  "updatedAt": "2026-10-11T19:50:00+05:00"
 }
