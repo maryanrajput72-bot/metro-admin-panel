@@ -5,21 +5,14 @@
   "versionCode": 221,
   "apkUrl": "https://drive.usercontent.google.com/download?id=1AER3K73JXUuh83EsPYy7KUTxAfFkUvFC&export=download&confirm=t",
   "notes": "Staff: green chat UI + role badges + chat settings",
-  "main": {
-    "versionName": "1.2.20",
-    "versionCode": 221,
-    "apkUrl": "https://drive.usercontent.google.com/download?id=1AER3K73JXUuh83EsPYy7KUTxAfFkUvFC&export=download&confirm=t",
-    "notes": "Staff: green chat UI + role badges + chat settings"
-  },
   "trial": {
     "testers": [
-      "muneeb",
       "maryan"
     ],
-    "versionName": "1.2.22",
-    "versionCode": 223,
-    "apkUrl": "https://drive.usercontent.google.com/download?id=1bxk2yhta6zjAT9cNi3d6X38mvxZ64aBW&export=download&confirm=t",
-    "notes": "Trial: Settings overhaul (role avatar, Trial/Staff badge, Supervisor, Premium Access, notif toggles, chat settings)"
+    "versionName": "1.2.23",
+    "versionCode": 224,
+    "apkUrl": "https://drive.usercontent.google.com/download?id=1K6jtcGObjK08WD1CJ2c_WXN8BFlNkBk7&export=download&confirm=t",
+    "notes": "Trial: Camera instant location (warm cache)"
   },
-  "updatedAt": "2026-10-12T21:30:00+05:00"
+  "updatedAt": "2026-10-12T21:35:00+05:00"
 }
