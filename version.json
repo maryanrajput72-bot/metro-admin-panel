@@ -9,11 +9,10 @@
   "testers": [
    "3526"
   ],
-  "versionName": "1.1.92",
-  "versionCode": 193,
-  "apkUrl": "https://drive.usercontent.google.com/download?id=19c6ZatV2BybNHmzzf1MpA2J7_g_0_7Zt&export=download&confirm=t",
-  "notes": "Trial: splash like reference - Metro+ title, bottom text/dots/progress"
+  "versionName": "1.1.93",
+  "versionCode": 194,
+  "apkUrl": "https://drive.usercontent.google.com/download?id=1KFjY5z9Zny8IoUAA8eckhZ-_dBvc8EHQ&export=download&confirm=t",
+  "notes": "Trial: no white flash, home screen only after splash"
  },
- "updatedAt": "2026-10-12T12:35:00+05:00"
+ "updatedAt": "2026-10-12T12:40:00+05:00"
 }
-
