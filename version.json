@@ -16,10 +16,10 @@
       "muneeb",
       "maryan"
     ],
-    "versionName": "1.2.21",
-    "versionCode": 222,
-    "apkUrl": "https://drive.usercontent.google.com/download?id=1x101Or9OnemJyS0yuOHQzDkXaWo_mZX3&export=download&confirm=t",
-    "notes": "Trial: GPS warmup fix"
+    "versionName": "1.2.22",
+    "versionCode": 223,
+    "apkUrl": "https://drive.usercontent.google.com/download?id=1bxk2yhta6zjAT9cNi3d6X38mvxZ64aBW&export=download&confirm=t",
+    "notes": "Trial: Settings overhaul (role avatar, Trial/Staff badge, Supervisor, Premium Access, notif toggles, chat settings)"
   },
-  "updatedAt": "2026-10-12T20:57:00+05:00"
+  "updatedAt": "2026-10-12T21:30:00+05:00"
 }
