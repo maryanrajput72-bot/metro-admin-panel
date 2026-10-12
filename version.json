@@ -9,10 +9,10 @@
     "testers": [
       "3526"
     ],
-    "versionName": "1.2.04",
-    "versionCode": 205,
-    "apkUrl": "https://drive.usercontent.google.com/download?id=1roVXdm28ceAJILqO1HnkEGQwApdAwsJ1&export=download&confirm=t",
-    "notes": "Trial: cute logout + footer at bottom"
+    "versionName": "1.2.05",
+    "versionCode": 206,
+    "apkUrl": "https://drive.usercontent.google.com/download?id=13NoiuXJR3upnIKfRm1KENfOanhrbuzSc&export=download&confirm=t",
+    "notes": "Trial: role badge, msg icon+red dot, bg GPS warmup"
   },
-  "updatedAt": "2026-10-12T16:35:00+05:00"
+  "updatedAt": "2026-10-12T16:55:00+05:00"
 }
