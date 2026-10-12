@@ -9,10 +9,10 @@
     "testers": [
       "3526"
     ],
-    "versionName": "1.2.19",
-    "versionCode": 220,
-    "apkUrl": "https://drive.usercontent.google.com/download?id=1OKfuKOCX5wNNCp4U_7ynoldi11tku8Q0&export=download&confirm=t",
-    "notes": "Trial: role fix + chat settings"
+    "versionName": "1.2.20",
+    "versionCode": 221,
+    "apkUrl": "https://drive.usercontent.google.com/download?id=1AER3K73JXUuh83EsPYy7KUTxAfFkUvFC&export=download&confirm=t",
+    "notes": "Trial: stale role bug fix"
   },
-  "updatedAt": "2026-10-12T19:50:00+05:00"
+  "updatedAt": "2026-10-12T20:01:00+05:00"
 }
