@@ -1,18 +1,21 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.1.72",
-  "versionCode": 173,
-  "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Main: chat CSS root fix, splash logo original, 5s update check",
+  "main": {
+    "versionName": "1.2.20",
+    "versionCode": 221,
+    "apkUrl": "https://drive.usercontent.google.com/download?id=1AER3K73JXUuh83EsPYy7KUTxAfFkUvFC&export=download&confirm=t",
+    "notes": "Staff: green chat UI + role badges + chat settings"
+  },
   "trial": {
     "testers": [
-      "3526"
+      "muneeb",
+      "maryan"
     ],
     "versionName": "1.2.20",
     "versionCode": 221,
     "apkUrl": "https://drive.usercontent.google.com/download?id=1AER3K73JXUuh83EsPYy7KUTxAfFkUvFC&export=download&confirm=t",
     "notes": "Trial: stale role bug fix"
   },
-  "updatedAt": "2026-10-12T20:01:01+05:00"
+  "updatedAt": "2026-10-12T20:14:00+05:00"
 }
