@@ -9,10 +9,11 @@
   "testers": [
    "3526"
   ],
-  "versionName": "1.1.91",
-  "versionCode": 192,
-  "apkUrl": "https://drive.usercontent.google.com/download?id=1dRjJrgXTFBizv1Aw6rj_wYxxtiX3k68p&export=download&confirm=t",
-  "notes": "Trial: splash full 5s, scrolling text below progress bar, white splash removed"
+  "versionName": "1.1.92",
+  "versionCode": 193,
+  "apkUrl": "https://drive.usercontent.google.com/download?id=19c6ZatV2BybNHmzzf1MpA2J7_g_0_7Zt&export=download&confirm=t",
+  "notes": "Trial: splash like reference - Metro+ title, bottom text/dots/progress"
  },
- "updatedAt": "2026-10-12T12:30:00+05:00"
+ "updatedAt": "2026-10-12T12:35:00+05:00"
 }
+
