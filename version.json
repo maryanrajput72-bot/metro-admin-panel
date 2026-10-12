@@ -1,16 +1,18 @@
 {
-  "app": "metro-plus",
-  "package": "com.muneeb.metroapp",
-  "versionName": "1.1.72",
-  "versionCode": 173,
-  "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
-  "notes": "Main: chat CSS root fix, splash logo original, 5s update check",
-  "trial": {
-    "testers": ["3526"],
-    "versionName": "1.1.87",
-    "versionCode": 188,
-    "apkUrl": "https://drive.usercontent.google.com/download?id=1hlbW5myRlyKCLCwSCpk4m5vjIetmxPpN&export=download&confirm=t",
-    "notes": "Trial: TOM sync denied toast"
-  },
-  "updatedAt": "2026-10-12T07:50:00+05:00"
+ "app": "metro-plus",
+ "package": "com.muneeb.metroapp",
+ "versionName": "1.1.72",
+ "versionCode": 173,
+ "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
+ "notes": "Main: chat CSS root fix, splash logo original, 5s update check",
+ "trial": {
+  "testers": [
+   "3526"
+  ],
+  "versionName": "1.1.88",
+  "versionCode": 189,
+  "apkUrl": "https://drive.usercontent.google.com/download?id=1bFtYgY5lZisbXCBubDOnHIOFs-uNjPii&export=download&confirm=t",
+  "notes": "Trial: TOM Machines setting removed from app (admin panel only)"
+ },
+ "updatedAt": "2026-10-12T11:08:00+05:00"
 }
