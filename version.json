@@ -9,11 +9,10 @@
   "testers": [
    "3526"
   ],
-  "versionName": "1.1.94",
-  "versionCode": 195,
-  "apkUrl": "https://drive.usercontent.google.com/download?id=1IYq3Uv2Yl3rQUSMzhjbkj0EfN6C6wRyX&export=download&confirm=t",
-  "notes": "Trial: smooth crossfade splash to home, no white flash"
+  "versionName": "1.1.95",
+  "versionCode": 196,
+  "apkUrl": "https://drive.usercontent.google.com/download?id=1O2kPqBwlbax4khGFGKei2_4iTYD0YjlN&export=download&confirm=t",
+  "notes": "Trial: sharp logo + glow, no ghosting on fade"
  },
- "updatedAt": "2026-10-12T12:45:00+05:00"
+ "updatedAt": "2026-10-12T12:55:00+05:00"
 }
-
