@@ -1,6 +1,10 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
+  "versionName": "1.2.20",
+  "versionCode": 221,
+  "apkUrl": "https://drive.usercontent.google.com/download?id=1AER3K73JXUuh83EsPYy7KUTxAfFkUvFC&export=download&confirm=t",
+  "notes": "Staff: green chat UI + role badges + chat settings",
   "main": {
     "versionName": "1.2.20",
     "versionCode": 221,
