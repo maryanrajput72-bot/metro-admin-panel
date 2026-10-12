@@ -9,10 +9,11 @@
   "testers": [
    "3526"
   ],
-  "versionName": "1.1.93",
-  "versionCode": 194,
-  "apkUrl": "https://drive.usercontent.google.com/download?id=1KFjY5z9Zny8IoUAA8eckhZ-_dBvc8EHQ&export=download&confirm=t",
-  "notes": "Trial: no white flash, home screen only after splash"
+  "versionName": "1.1.94",
+  "versionCode": 195,
+  "apkUrl": "https://drive.usercontent.google.com/download?id=1IYq3Uv2Yl3rQUSMzhjbkj0EfN6C6wRyX&export=download&confirm=t",
+  "notes": "Trial: smooth crossfade splash to home, no white flash"
  },
- "updatedAt": "2026-10-12T12:40:00+05:00"
+ "updatedAt": "2026-10-12T12:45:00+05:00"
 }
+
