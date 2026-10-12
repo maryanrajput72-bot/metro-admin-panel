@@ -9,11 +9,10 @@
     "testers": [
       "3526"
     ],
-    "versionName": "1.2.06",
-    "versionCode": 207,
-    "apkUrl": "https://drive.usercontent.google.com/download?id=1G9TBkgdIPll-oR4wOV7xx4RTfrzfMEDs&export=download&confirm=t",
-    "notes": "Trial: small role badge, 3D msg icon"
+    "versionName": "1.2.07",
+    "versionCode": 208,
+    "apkUrl": "https://drive.usercontent.google.com/download?id=1Y33cmzRLg2fpMQHrsC05SrUdwXUsMnyf&export=download&confirm=t",
+    "notes": "Trial: header TL badge removed"
   },
-  "updatedAt": "2026-10-12T17:00:00+05:00"
+  "updatedAt": "2026-10-12T17:08:00+05:00"
 }
-
