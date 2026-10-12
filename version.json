@@ -1,18 +1,18 @@
 {
- "app": "metro-plus",
- "package": "com.muneeb.metroapp",
- "versionName": "1.1.72",
- "versionCode": 173,
- "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
- "notes": "Main: chat CSS root fix, splash logo original, 5s update check",
- "trial": {
-  "testers": [
-   "3526"
-  ],
-  "versionName": "1.1.99",
-  "versionCode": 200,
-  "apkUrl": "https://drive.usercontent.google.com/download?id=1qtmazX0UliQJrFbISIYBFu9BaHT4LlrV&export=download&confirm=t",
-  "notes": "Trial: full-page splash, old logos removed"
- },
- "updatedAt": "2026-10-12T13:25:00+05:00"
+  "app": "metro-plus",
+  "package": "com.muneeb.metroapp",
+  "versionName": "1.1.72",
+  "versionCode": 173,
+  "apkUrl": "https://drive.usercontent.google.com/download?id=1ZDCZ-n6GAx2BFgHXpQKKquxciqJGXN-D&export=download&confirm=t",
+  "notes": "Main: chat CSS root fix, splash logo original, 5s update check",
+  "trial": {
+    "testers": [
+      "3526"
+    ],
+    "versionName": "1.2.00",
+    "versionCode": 201,
+    "apkUrl": "https://drive.usercontent.google.com/download?id=1s31VKib5WDn0Jlb7hZBZTwsY2gKH932B&export=download&confirm=t",
+    "notes": "Trial: neon M launcher icon"
+  },
+  "updatedAt": "2026-10-12T14:15:00+05:00"
 }
