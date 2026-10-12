@@ -9,10 +9,10 @@
   "testers": [
    "3526"
   ],
-  "versionName": "1.1.90",
-  "versionCode": 190,
-  "apkUrl": "https://drive.usercontent.google.com/download?id=1QZjIapUdlP76ZNwE0hblBsoLyHGe2mul&export=download&confirm=t",
-  "notes": "Trial: new splash screen (dark, gold progress bar)"
+  "versionName": "1.1.91",
+  "versionCode": 192,
+  "apkUrl": "https://drive.usercontent.google.com/download?id=1dRjJrgXTFBizv1Aw6rj_wYxxtiX3k68p&export=download&confirm=t",
+  "notes": "Trial: splash full 5s, scrolling text below progress bar, white splash removed"
  },
- "updatedAt": "2026-10-12T12:20:00+05:00"
+ "updatedAt": "2026-10-12T12:30:00+05:00"
 }
