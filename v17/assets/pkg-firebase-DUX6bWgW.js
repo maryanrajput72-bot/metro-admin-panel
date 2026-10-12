@@ -1,0 +1,1 @@
+import{s as e}from"./pkg--firebase-app-B8VPjADz.js";import"./pkg--firebase-firestore-O97nHKDB.js";import"./pkg--firebase-auth-Xy1XVOJX.js";e(`firebase`,`13.0.0`,`app`);
