@@ -9,10 +9,10 @@
   "testers": [
    "3526"
   ],
-  "versionName": "1.1.88",
-  "versionCode": 189,
-  "apkUrl": "https://drive.usercontent.google.com/download?id=1bFtYgY5lZisbXCBubDOnHIOFs-uNjPii&export=download&confirm=t",
-  "notes": "Trial: TOM Machines setting removed from app (admin panel only)"
+  "versionName": "1.1.90",
+  "versionCode": 190,
+  "apkUrl": "https://drive.usercontent.google.com/download?id=1QZjIapUdlP76ZNwE0hblBsoLyHGe2mul&export=download&confirm=t",
+  "notes": "Trial: new splash screen (dark, gold progress bar)"
  },
- "updatedAt": "2026-10-12T11:08:00+05:00"
+ "updatedAt": "2026-10-12T12:20:00+05:00"
 }
