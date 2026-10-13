@@ -1,10 +1,10 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.2.53",
-  "versionCode": 254,
-  "apkUrl": "https://drive.usercontent.google.com/download?id=1l6zDFawXkzU8-bb0PyX9NVE6JxtILFgY&export=download&confirm=t",
-  "notes": "Staff: Dark removed, clean build",
+  "versionName": "1.2.56",
+  "versionCode": 257,
+  "apkUrl": "https://drive.usercontent.google.com/download?id=1_p6ozV1gp49evvpuC47fvcaobNc0ixKG&export=download&confirm=t",
+  "notes": "Staff: Login deep fix",
   "trial": {
     "testers": [
       "3526",
@@ -15,5 +15,5 @@
     "apkUrl": "https://drive.usercontent.google.com/download?id=1_p6ozV1gp49evvpuC47fvcaobNc0ixKG&export=download&confirm=t",
     "notes": "Trial: Login deep fix"
   },
-  "updatedAt": "2026-10-13T17:41:00+05:00"
+  "updatedAt": "2026-10-13T18:13:00+05:00"
 }
