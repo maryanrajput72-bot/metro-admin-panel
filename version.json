@@ -1,10 +1,10 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.2.20",
-  "versionCode": 221,
-  "apkUrl": "https://drive.usercontent.google.com/download?id=1AER3K73JXUuh83EsPYy7KUTxAfFkUvFC&export=download&confirm=t",
-  "notes": "Staff: green chat UI + role badges + chat settings",
+  "versionName": "1.2.36",
+  "versionCode": 237,
+  "apkUrl": "https://drive.usercontent.google.com/download?id=1PfGxgriGGc-96__FakieNtTYv4wj3wbD&export=download&confirm=t",
+  "notes": "Staff: Data lock, chat tabs, online list, premium admin check",
   "trial": {
     "testers": [
       "3526",
@@ -15,5 +15,5 @@
     "apkUrl": "https://drive.usercontent.google.com/download?id=1PfGxgriGGc-96__FakieNtTYv4wj3wbD&export=download&confirm=t",
     "notes": "Trial: Premium admin check"
   },
-  "updatedAt": "2026-10-13T08:50:00+05:00"
+  "updatedAt": "2026-10-13T08:55:00+05:00"
 }
