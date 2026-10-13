@@ -1,10 +1,10 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.2.40",
-  "versionCode": 241,
-  "apkUrl": "https://drive.usercontent.google.com/download?id=1FIsEP7a9sGwmPDF2pufNqEu2gk47UOCZ&export=download&confirm=t",
-  "notes": "Staff: Logout card, pencil icon, privacy lock",
+  "versionName": "1.2.53",
+  "versionCode": 254,
+  "apkUrl": "https://drive.usercontent.google.com/download?id=1l6zDFawXkzU8-bb0PyX9NVE6JxtILFgY&export=download&confirm=t",
+  "notes": "Staff: Dark removed, clean build",
   "trial": {
     "testers": [
       "3526",
@@ -15,5 +15,5 @@
     "apkUrl": "https://drive.usercontent.google.com/download?id=1l6zDFawXkzU8-bb0PyX9NVE6JxtILFgY&export=download&confirm=t",
     "notes": "Trial: Dark removed"
   },
-  "updatedAt": "2026-10-13T16:22:00+05:00"
+  "updatedAt": "2026-10-13T16:45:00+05:00"
 }
