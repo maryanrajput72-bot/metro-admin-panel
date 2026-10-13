@@ -10,10 +10,10 @@
       "3526",
       "MARYAN"
     ],
-    "versionName": "1.2.63",
-    "versionCode": 264,
-    "apkUrl": "https://drive.usercontent.google.com/download?id=1bsSQJIalfXARg0HTSM--3dlfqC4RFnsL&export=download&confirm=t",
-    "notes": "Trial: Hang + white screen fix (debounce)"
+    "versionName": "1.2.64",
+    "versionCode": 265,
+    "apkUrl": "https://drive.usercontent.google.com/download?id=1AlwSertCMo3G8n6Y9W1tBIjfAXZcSxJn&export=download&confirm=t",
+    "notes": "Trial: Duplicate fix + Time label + dropdown fix"
   },
-  "updatedAt": "2026-10-13T22:45:44+05:00"
+  "updatedAt": "2026-10-13T23:07:00+05:00"
 }
