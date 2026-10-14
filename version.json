@@ -1,10 +1,10 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "1.2.56",
-  "versionCode": 257,
-  "apkUrl": "https://drive.usercontent.google.com/download?id=1_p6ozV1gp49evvpuC47fvcaobNc0ixKG&export=download&confirm=t",
-  "notes": "Staff: Login deep fix",
+  "versionName": "2.1.4",
+  "versionCode": 312,
+  "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.4.apk",
+  "notes": "Staff: New white+red design, dark mode, hubs list, faster app",
   "trial": {
     "testers": [
       "3526",
@@ -15,5 +15,5 @@
     "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.4.apk",
     "notes": "Trial: New white+red design, dark mode, hubs list, faster app"
   },
-  "updatedAt": "2026-10-14T10:05:00+05:00"
+  "updatedAt": "2026-10-14T10:08:00+05:00"
 }
