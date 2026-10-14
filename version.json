@@ -1,19 +1,19 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "2.1.11",
-  "versionCode": 319,
-  "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.11.apk",
-  "notes": "Staff: Opening WhatsApp fix, rolls mirror, review before send, camera fix, GPS photos to admin, new Hi card, What's new",
+  "versionName": "2.1.12",
+  "versionCode": 320,
+  "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.12.apk",
+  "notes": "Staff: Closing rolls always match Opening rolls",
   "trial": {
     "testers": [
       "3526",
       "MARYAN"
     ],
-    "versionName": "2.1.11",
-    "versionCode": 319,
-    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.11.apk",
-    "notes": "Trial: Opening WhatsApp fix, rolls mirror, review before send, camera fix, GPS photos to admin, new Hi card, What's new"
+    "versionName": "2.1.12",
+    "versionCode": 320,
+    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.12.apk",
+    "notes": "Trial: Closing rolls always match Opening rolls"
   },
-  "updatedAt": "2026-10-14T17:48:00+05:00"
+  "updatedAt": "2026-10-14T18:05:00+05:00"
 }
