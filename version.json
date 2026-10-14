@@ -1,10 +1,10 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "2.1.9",
-  "versionCode": 317,
-  "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.9.apk",
-  "notes": "Staff: Login fix, roll auto-sync between shifts, GPS city fix, new colors",
+  "versionName": "2.1.10",
+  "versionCode": 318,
+  "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.10.apk",
+  "notes": "Staff: Update fix for Xiaomi/Redmi phones (opens install screen)",
   "trial": {
     "testers": [
       "3526",
@@ -15,5 +15,5 @@
     "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.10.apk",
     "notes": "Trial: Update fix for Xiaomi/Redmi phones (opens install screen)"
   },
-  "updatedAt": "2026-10-14T16:53:00+05:00"
+  "updatedAt": "2026-10-14T16:57:00+05:00"
 }
