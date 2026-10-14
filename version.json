@@ -10,10 +10,10 @@
       "3526",
       "MARYAN"
     ],
-    "versionName": "2.1.10",
-    "versionCode": 318,
-    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.10.apk",
-    "notes": "Trial: Update fix for Xiaomi/Redmi phones (opens install screen)"
+    "versionName": "2.1.11",
+    "versionCode": 319,
+    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.11.apk",
+    "notes": "Trial: Opening WhatsApp fix, rolls mirror, review before send, camera fix, GPS photos to admin, new Hi card, What's new"
   },
-  "updatedAt": "2026-10-14T16:57:00+05:00"
+  "updatedAt": "2026-10-14T17:45:00+05:00"
 }
