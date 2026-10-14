@@ -10,10 +10,10 @@
       "3526",
       "MARYAN"
     ],
-    "versionName": "2.1.7",
-    "versionCode": 315,
-    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.7.apk",
-    "notes": "Trial: Roll sync also picks up rolls saved before the update"
+    "versionName": "2.1.8",
+    "versionCode": 316,
+    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.8.apk",
+    "notes": "Trial: New TOM header colors + bus icon, cleaner home cards, chat Today/Yesterday"
   },
-  "updatedAt": "2026-10-14T11:55:00+05:00"
+  "updatedAt": "2026-10-14T12:06:00+05:00"
 }
