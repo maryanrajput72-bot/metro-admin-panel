@@ -10,10 +10,10 @@
       "3526",
       "MARYAN"
     ],
-    "versionName": "2.1.4",
-    "versionCode": 312,
-    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.4.apk",
-    "notes": "Trial: New white+red design, dark mode, hubs list, faster app"
+    "versionName": "2.1.5",
+    "versionCode": 313,
+    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.5.apk",
+    "notes": "Trial: Roll auto-sync (Morning closing <-> Evening opening), portal login premium-only, new hub colors, card logos"
   },
-  "updatedAt": "2026-10-14T10:08:00+05:00"
+  "updatedAt": "2026-10-14T11:26:00+05:00"
 }
