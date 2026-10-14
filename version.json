@@ -10,10 +10,10 @@
       "3526",
       "MARYAN"
     ],
-    "versionName": "2.1.5",
-    "versionCode": 313,
-    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.5.apk",
-    "notes": "Trial: Roll auto-sync (Morning closing <-> Evening opening), portal login premium-only, new hub colors, card logos"
+    "versionName": "2.1.6",
+    "versionCode": 314,
+    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.6.apk",
+    "notes": "Trial: Evening closing rolls -> next morning opening, GPS shows Rawalpindi correctly"
   },
-  "updatedAt": "2026-10-14T11:26:00+05:00"
+  "updatedAt": "2026-10-14T11:43:00+05:00"
 }
