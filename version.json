@@ -10,10 +10,10 @@
       "3526",
       "MARYAN"
     ],
-    "versionName": "2.1.20",
-    "versionCode": 328,
-    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.20.apk",
-    "notes": "Trial: Solid map pin, new gallery buttons, Send via attendance form, reliable back button, admin account removal"
+    "versionName": "2.1.21",
+    "versionCode": 329,
+    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.21.apk",
+    "notes": "Trial: Attendance form opens on the selected photo, then WhatsApp"
   },
-  "updatedAt": "2026-10-15T09:23:00+05:00"
+  "updatedAt": "2026-10-15T09:44:00+05:00"
 }
