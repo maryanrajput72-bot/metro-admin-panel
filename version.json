@@ -1,19 +1,19 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "2.1.25",
-  "versionCode": 333,
-  "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.25.apk",
-  "notes": "New native GPS Camera with map, photo gallery, staff list saved online, cash check, red-black design",
+  "versionName": "2.1.26",
+  "versionCode": 334,
+  "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.26.apk",
+  "notes": "Smarter sign up, premium access per account, full day clear in TOM register",
   "trial": {
     "testers": [
       "3526",
       "MARYAN"
     ],
-    "versionName": "2.1.25",
-    "versionCode": 333,
-    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.25.apk",
-    "notes": "Trial: Staff list saves online, red-black buttons"
+    "versionName": "2.1.26",
+    "versionCode": 334,
+    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.26.apk",
+    "notes": "Trial: Live duplicate check on sign up, premium per account, full day clear"
   },
-  "updatedAt": "2026-10-15T10:33:00+05:00"
+  "updatedAt": "2026-10-15T13:20:00+05:00"
 }
