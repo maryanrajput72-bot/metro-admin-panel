@@ -10,10 +10,10 @@
       "3526",
       "MARYAN"
     ],
-    "versionName": "2.1.23",
-    "versionCode": 331,
-    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.23.apk",
-    "notes": "Trial: Station staff list saved online and restored automatically"
+    "versionName": "2.1.24",
+    "versionCode": 332,
+    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.24.apk",
+    "notes": "Trial: Staff list Edit and Save, saved online per shift, restored automatically"
   },
-  "updatedAt": "2026-10-15T10:09:00+05:00"
+  "updatedAt": "2026-10-15T10:18:00+05:00"
 }
