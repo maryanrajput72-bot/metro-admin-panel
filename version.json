@@ -1,19 +1,19 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "2.1.26",
-  "versionCode": 334,
-  "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.26.apk",
-  "notes": "Smarter sign up, premium access per account, full day clear in TOM register",
+  "versionName": "2.1.27",
+  "versionCode": 335,
+  "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.27.apk",
+  "notes": "Cleaner sign up checks, deleted accounts can sign up again",
   "trial": {
     "testers": [
       "3526",
       "MARYAN"
     ],
-    "versionName": "2.1.26",
-    "versionCode": 334,
-    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.26.apk",
-    "notes": "Trial: Live duplicate check on sign up, premium per account, full day clear"
+    "versionName": "2.1.27",
+    "versionCode": 335,
+    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.27.apk",
+    "notes": "Trial: Cleaner sign up checks, deleted accounts can sign up again"
   },
-  "updatedAt": "2026-10-15T13:20:00+05:00"
+  "updatedAt": "2026-10-15T13:30:00+05:00"
 }
