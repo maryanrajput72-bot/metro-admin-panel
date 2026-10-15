@@ -10,10 +10,10 @@
       "3526",
       "MARYAN"
     ],
-    "versionName": "2.1.21",
-    "versionCode": 329,
-    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.21.apk",
-    "notes": "Trial: Attendance form opens on the selected photo, then WhatsApp"
+    "versionName": "2.1.22",
+    "versionCode": 330,
+    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.22.apk",
+    "notes": "Trial: Full photo in attendance form, station and shift picker cards"
   },
-  "updatedAt": "2026-10-15T09:44:00+05:00"
+  "updatedAt": "2026-10-15T09:56:00+05:00"
 }
