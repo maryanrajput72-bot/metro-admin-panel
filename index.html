@@ -189,6 +189,12 @@
   .pill.admin{background:#e8eaff;color:#2b3ad6;} .pill.tl{background:var(--amber-l);color:#a86a00;} .pill.staff{background:var(--green-l);color:var(--green-d);}
   .pill.rp{background:var(--purple-l);color:var(--purple);}
   .pill.ok{background:#e6f6ec;color:#008f46;} .pill.warn{background:#fdf3e0;color:#b26a00;} .pill.none{background:#eef1f6;color:#8a93a8;}
+  /* actions column always visible on phones (table scrolls sideways) */
+  .tablewrap table.dt td:last-child,.tablewrap table.dt th:last-child{position:sticky;right:0;background:#fff;box-shadow:-8px 0 10px -8px rgba(15,23,42,.18);z-index:1;}
+  .tablewrap table.dt th:last-child{background:#fafbfd;}
+  .act2{display:flex;gap:6px;align-items:center;}
+  .ph-del-all{margin-left:auto;}
+  #lbDel{margin-top:10px;}
   table.dt select{background:#fff;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:6px 8px;font-size:12.5px;}
   .foot{margin-top:14px;padding-top:12px;border-top:1px dashed var(--line);font-size:12px;color:var(--mut);}
   .spinner{text-align:center;padding:34px;color:var(--mut);font-size:14px;}
@@ -398,6 +404,20 @@
         <div id="attSum" style="padding:0 22px 22px;"></div>
       </div>
       <div class="panel">
+        <div class="panelhead"><h3>App sign-ups</h3><span class="tag" id="suCount"></span></div>
+        <div style="padding:0 22px;">
+          <p class="mut" style="margin:0 0 12px">Staff who signed up in the Metro+ app. Delete removes the account — that person is logged out and must sign up again. Their TOM records stay safe.</p>
+          <div class="filters" style="margin-bottom:14px;">
+            <input type="text" id="suFilterQ" placeholder="Name / ID / number search…" style="background:#f6f8fb;border-color:var(--line);color:var(--ink);" oninput="renderSignups()">
+            <button class="btn sm" onclick="loadSignups()">Refresh</button>
+          </div>
+          <div class="tablewrap" style="margin-bottom:22px;"><table class="dt">
+            <thead><tr><th>Name</th><th>Employee ID</th><th>Number</th><th>Station</th><th>Shift</th><th>Role</th><th>Signed up</th><th></th></tr></thead>
+            <tbody id="suBody"></tbody>
+          </table></div>
+        </div>
+      </div>
+      <div class="panel">
         <div class="panelhead"><h3>Registered staff</h3></div>
         <div style="padding:0 22px;">
           <div class="filters" style="margin-bottom:14px;">
@@ -424,6 +444,7 @@
           <div class="fld"><label>Shift</label><select id="phShift"><option value="">Both shifts</option><option>Morning</option><option>Evening</option></select></div>
           <div class="fld"><label>Date</label><input type="date" id="phDate"></div>
           <button class="btn sm" onclick="loadPhotos()">View</button>
+          <button class="btn danger sm ph-del-all hidden" id="phDelAll" onclick="delAllPhotos()">Delete all shown</button>
         </div>
       </div>
       <div class="ph-grid" id="phGrid"></div>
@@ -463,7 +484,7 @@
 </div>
 
 <div id="lightbox" onclick="this.style.display='none'">
-  <div><img id="lbImg"><div class="cap" id="lbCap"></div></div>
+  <div><img id="lbImg"><div class="cap" id="lbCap"></div><button class="btn danger sm" id="lbDel" onclick="event.stopPropagation();var id=this.getAttribute('data-id');document.getElementById('lightbox').style.display='none';delPhoto(id);">Delete this photo</button></div>
 </div>
 
 <!-- custom confirm (replaces native confirm()) -->
@@ -711,6 +732,7 @@ function showTab(t){
   document.querySelectorAll('#tabbar button').forEach(function(b){ b.classList.toggle('on', b.dataset.tab===t); });
   ['dash','opening','closing','staff','photos','tlaccess'].forEach(function(x){ document.getElementById('tab-'+x).classList.toggle('hidden', x!==t); });
   if(t==='tlaccess') loadTlUsers();
+  if(t==='staff') loadSignups();
 }
 function fillSelects(){
   var opts=STATIONS.map(function(s){return '<option value="'+s.id+'">'+s.name+'</option>';}).join('');
@@ -1041,6 +1063,47 @@ async function delUser(phone){
   catch(e){ toast('Error: '+e.message,'bad'); }
 }
 
+/* ================= APP SIGN-UPS (staff_logins) =================
+   Delete = tombstone {removed:true}: app us user ko logout karti hai aur dobara sign up karna parta hai.
+   (Doc ko seedha delete nahi karte — warna purane phones pe local account se login chalta rehta.) */
+var suList=[];
+async function loadSignups(){
+  var tb=document.getElementById('suBody');
+  tb.innerHTML='<tr><td colspan="8" class="mut">Loading…</td></tr>';
+  try{
+    var list=await fsQueryWithIds('staff_logins',null,null,500);
+    suList=list.filter(function(u){ return !u.removed; });
+    suList.sort(function(a,b){ return String(b.firstLoginAt||b.updatedAt||'')<String(a.firstLoginAt||a.updatedAt||'')?-1:1; });
+    renderSignups();
+  }catch(e){ tb.innerHTML='<tr><td colspan="8">Error: '+esc(e.message)+'</td></tr>'; }
+}
+function renderSignups(){
+  var tb=document.getElementById('suBody'); if(!tb) return;
+  var q=(document.getElementById('suFilterQ').value||'').trim().toLowerCase();
+  var rows=suList.filter(function(u){
+    return !q || [u.name,u.employeeId,u._docId,u.mobile,u.station].join(' ').toLowerCase().indexOf(q)>=0;
+  });
+  var c=document.getElementById('suCount'); if(c) c.textContent=suList.length+' accounts';
+  if(!rows.length){ tb.innerHTML='<tr><td colspan="8" class="mut">No sign-ups found.</td></tr>'; return; }
+  tb.innerHTML=rows.map(function(u){
+    var id=u._docId||u.employeeId||'';
+    var when=u.firstLoginAt?String(u.firstLoginAt).slice(0,10):'—';
+    return '<tr><td>'+stAv(u.name||'?',true)+'<b>'+esc(u.name||'—')+'</b></td><td>'+esc(u.employeeId||id)+'</td><td>'+esc(u.mobile||'—')+'</td>'
+      +'<td>'+esc(u.station||'—')+'</td><td>'+esc(u.shift||'—')+'</td><td>'+esc(u.role||'—')+'</td><td class="mut">'+esc(when)+'</td>'
+      +'<td><button class="btn danger sm" onclick="delSignup(\''+esc(id)+'\')">Delete</button></td></tr>';
+  }).join('');
+}
+async function delSignup(id){
+  if(!id) return;
+  var u=null; for(var i=0;i<suList.length;i++){ if(suList[i]._docId===id){ u=suList[i]; break; } }
+  var who=(u&&u.name?u.name+' ('+id+')':id);
+  if(!(await uiConfirm('Delete the account of '+who+'? They will be logged out and must sign up again.'))) return;
+  try{
+    await fsSet('staff_logins/'+id,{employeeId:id,removed:true,removedAt:new Date().toISOString()});
+    toast('Account deleted ✓','ok'); loadSignups();
+  }catch(e){ toast('Error: '+e.message,'bad'); }
+}
+
 /* ================= PHOTOS ================= */
 async function loadPhotos(){
   var sid=document.getElementById('phStation').value, shift=document.getElementById('phShift').value, date=document.getElementById('phDate').value;
@@ -1053,6 +1116,8 @@ async function loadPhotos(){
     list=list.filter(function(p){ return (!sid||p.stationId===sid)&&(!shift||p.shift===shift); });
     list.sort(function(a,b){ return (b.ts||0)-(a.ts||0); });
     list=list.slice(0,60);
+    phShown=list;
+    var da=document.getElementById('phDelAll'); if(da){ da.classList.toggle('hidden', !list.length); da.textContent='Delete all shown ('+list.length+')'; }
     if(!list.length){ grid.innerHTML='<div class="empty">No photos found.<br><span class="mut">Try changing the filters.</span></div>'; return; }
     grid.innerHTML='';
     list.forEach(function(p){
@@ -1063,6 +1128,7 @@ async function loadPhotos(){
       c.onclick=function(){
         document.getElementById('lbImg').src=p.thumb;
         document.getElementById('lbCap').textContent=(p.stationName||stName(p.stationId))+' · '+(p.shift||'')+' · '+when;
+        document.getElementById('lbDel').setAttribute('data-id', p._docId||'');
         document.getElementById('lightbox').style.display='flex';
       };
       grid.appendChild(c);
@@ -1084,6 +1150,16 @@ async function fsQueryWithIds(coll, filter, orderBy, limit){
     d._docId=(x.document.name||'').split('/').pop();
     return d;
   });
+}
+var phShown=[];
+async function delAllPhotos(){
+  var ids=phShown.map(function(p){return p._docId;}).filter(Boolean);
+  if(!ids.length) return;
+  if(!(await uiConfirm('Delete all '+ids.length+' photos shown here permanently?'))) return;
+  var ok=0, bad=0;
+  for(var i=0;i<ids.length;i++){ try{ await fsDelete('photos/'+ids[i]); ok++; }catch(e){ bad++; } }
+  toast(bad?('Deleted '+ok+', failed '+bad):('Deleted '+ok+' photos ✓'), bad?'bad':'ok');
+  loadPhotos();
 }
 async function delPhoto(docId){
   if(!docId) return;
