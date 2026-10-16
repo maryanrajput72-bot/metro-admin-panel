@@ -1,10 +1,10 @@
 {
   "app": "metro-plus",
   "package": "com.muneeb.metroapp",
-  "versionName": "2.1.27",
-  "versionCode": 335,
-  "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.27.apk",
-  "notes": "Cleaner sign up checks, deleted accounts can sign up again",
+  "versionName": "2.1.31",
+  "versionCode": 339,
+  "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.31.apk",
+  "notes": "Right shift in every report, GPS camera video with stamp, city name and exact location on GPS photos",
   "trial": {
     "testers": [
       "3526",
@@ -15,5 +15,5 @@
     "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.31.apk",
     "notes": "Trial: One city on GPS photos, exact location (no auto nearest station), GPS stamp on videos"
   },
-  "updatedAt": "2026-10-16T06:48:00+05:00"
+  "updatedAt": "2026-10-16T07:13:00+05:00"
 }
