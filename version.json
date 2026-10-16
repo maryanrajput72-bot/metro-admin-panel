@@ -10,10 +10,10 @@
       "3526",
       "MARYAN"
     ],
-    "versionName": "2.1.29",
-    "versionCode": 337,
-    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.29.apk",
-    "notes": "Trial: Strict selected shift in reports, GPS camera video, cleaner Edit Profile, older-phone fix"
+    "versionName": "2.1.30",
+    "versionCode": 338,
+    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.30.apk",
+    "notes": "Trial: City name on GPS photos, more exact location, GPS stamp on videos"
   },
-  "updatedAt": "2026-10-16T06:16:00+05:00"
+  "updatedAt": "2026-10-16T06:33:00+05:00"
 }
