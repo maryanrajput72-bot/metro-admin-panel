@@ -15,5 +15,11 @@
     "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.31.apk",
     "notes": "Trial: One city on GPS photos, exact location (no auto nearest station), GPS stamp on videos"
   },
-  "updatedAt": "2026-10-16T07:13:00+05:00"
+  "updatedAt": "2026-10-16T08:40:00+05:00",
+  "lite": {
+    "versionName": "2.1.31-lite",
+    "versionCode": 339,
+    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.31-lite.apk",
+    "notes": "Light version: automatic updates, right shift in every report, GPS camera video with stamp, city name and exact location, cleaner Edit Profile"
+  }
 }
