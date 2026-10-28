@@ -10,10 +10,10 @@
       "3526",
       "MARYAN"
     ],
-    "versionName": "2.1.34",
-    "versionCode": 342,
-    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.34-trial.apk",
-    "notes": "Trial: One city on GPS photos, exact location (no auto nearest station), GPS stamp on videos, GPS stamp split layout (map box + text box separate), PhotoStamper verifier fix, GPS stamp preview-match, Saved in gallery English"
+    "versionName": "2.1.35",
+    "versionCode": 343,
+    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.35-trial.apk",
+    "notes": "Trial: One city on GPS photos, exact location (no auto nearest station), GPS stamp on videos, GPS stamp split layout (map box + text box separate), PhotoStamper verifier fix, GPS stamp preview-match, Saved in gallery English, Location stamp fixed height spec proportions"
   },
   "updatedAt": "2026-10-16T08:40:00+05:00",
   "lite": {
