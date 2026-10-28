@@ -10,10 +10,10 @@
       "3526",
       "MARYAN"
     ],
-    "versionName": "2.1.38",
-    "versionCode": 346,
-    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.38-trial.apk",
-    "notes": "Trial: One city on GPS photos, exact location (no auto nearest station), GPS stamp on videos, PhotoStamper verifier fix, GPS stamp preview-match, Saved in gallery English, Reference stamp separate map text equal height, Camera preview taller 3:2, Pinch zoom, Capture ring around button"
+    "versionName": "2.1.39",
+    "versionCode": 347,
+    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.39-trial.apk",
+    "notes": "Trial: One city on GPS photos, exact location (no auto nearest station), GPS stamp on videos, PhotoStamper verifier fix, GPS stamp preview-match, Saved in gallery English, Reference stamp separate map text equal height, Camera preview taller 3:2, Pinch zoom, Capture ring around button, Portal seal N-, Leave Form and Overtime Detail, TOM history last 7 days, Admin panel V17 only, Premium request screen"
   },
   "updatedAt": "2026-10-16T08:40:00+05:00",
   "lite": {
