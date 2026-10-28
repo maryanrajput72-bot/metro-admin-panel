@@ -10,10 +10,10 @@
       "3526",
       "MARYAN"
     ],
-    "versionName": "2.1.31",
-    "versionCode": 339,
-    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.31.apk",
-    "notes": "Trial: One city on GPS photos, exact location (no auto nearest station), GPS stamp on videos"
+    "versionName": "2.1.32",
+    "versionCode": 340,
+    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.32-trial.apk",
+    "notes": "Trial: One city on GPS photos, exact location (no auto nearest station), GPS stamp on videos, GPS stamp split layout (map box + text box separate)"
   },
   "updatedAt": "2026-10-16T08:40:00+05:00",
   "lite": {
