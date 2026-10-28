@@ -1,1 +1,25 @@
-ewogICJhcHAiOiAibWV0cm8tcGx1cyIsCiAgInBhY2thZ2UiOiAiY29tLm11bmVlYi5tZXRyb2FwcCIsCiAgInZlcnNpb25OYW1lIjogIjIuMS4zMSIsCiAgInZlcnNpb25Db2RlIjogMzM5LAogICJhcGtVcmwiOiAiaHR0cHM6Ly9tYXJ5YW5yYWpwdXQ3Mi1ib3QuZ2l0aHViLmlvL21ldHJvLWFkbWluLXBhbmVsL2Fway9NZXRyb1BsdXMtdjIuMS4zMS5hcGsiLAogICJub3RlcyI6ICJSaWdodCBzaGlmdCBpbiBldmVyeSByZXBvcnQsIEdQUyBjYW1lcmEgdmlkZW8gd2l0aCBzdGFtcCwgY2l0eSBuYW1lIGFuZCBleGFjdCBsb2NhdGlvbiBvbiBHUFMgcGhvdG9zIiwKICAidHJpYWwiOiB7CiAgICAidGVzdGVycyI6IFsKICAgICAgIjM1MjYiLAogICAgICAiTUFSWUFOIgogICAgXSwKICAgICJ2ZXJzaW9uTmFtZSI6ICIyLjEuMzMiLAogICAgInZlcnNpb25Db2RlIjogMzQxLAogICAgImFwa1VybCI6ICJodHRwczovL21hcnlhbnJhanB1dDcyLWJvdC5naXRodWIuaW8vbWV0cm8tYWRtaW4tcGFuZWwvYXBrL01ldHJvUGx1cy12Mi4xLjMzLXRyaWFsLmFwayIsCiAgICAibm90ZXMiOiAiVHJpYWw6IE9uZSBjaXR5IG9uIEdQUyBwaG90b3MsIGV4YWN0IGxvY2F0aW9uIChubyBhdXRvIG5lYXJlc3Qgc3RhdGlvbiksIEdQUyBzdGFtcCBvbiB2aWRlb3MsIEdQUyBzdGFtcCBzcGxpdCBsYXlvdXQgKG1hcCBib3ggKyB0ZXh0IGJveCBzZXBhcmF0ZSksIFBob3RvU3RhbXBlciB2ZXJpZmllciBmaXgiCiAgfSwKICAidXBkYXRlZEF0IjogIjIwMjYtMTAtMTZUMDg6NDA6MDArMDU6MDAiLAogICJsaXRlIjogewogICAgInZlcnNpb25OYW1lIjogIjIuMS4zMS1saXRlIiwKICAgICJ2ZXJzaW9uQ29kZSI6IDMzOSwKICAgICJhcGtVcmwiOiAiaHR0cHM6Ly9tYXJ5YW5yYWpwdXQ3Mi1ib3QuZ2l0aHViLmlvL21ldHJvLWFkbWluLXBhbmVsL2Fway9NZXRyb1BsdXMtdjIuMS4zMS1saXRlLmFwayIsCiAgICAibm90ZXMiOiAiTGlnaHQgdmVyc2lvbjogYXV0b21hdGljIHVwZGF0ZXMsIHJpZ2h0IHNoaWZ0IGluIGV2ZXJ5IHJlcG9ydCwgR1BTIGNhbWVyYSB2aWRlbyB3aXRoIHN0YW1wLCBjaXR5IG5hbWUgYW5kIGV4YWN0IGxvY2F0aW9uLCBjbGVhbmVyIEVkaXQgUHJvZmlsZSIKICB9Cn0K
+{
+  "app": "metro-plus",
+  "package": "com.muneeb.metroapp",
+  "versionName": "2.1.31",
+  "versionCode": 339,
+  "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.31.apk",
+  "notes": "Right shift in every report, GPS camera video with stamp, city name and exact location on GPS photos",
+  "trial": {
+    "testers": [
+      "3526",
+      "MARYAN"
+    ],
+    "versionName": "2.1.33",
+    "versionCode": 341,
+    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.33-trial.apk",
+    "notes": "Trial: One city on GPS photos, exact location (no auto nearest station), GPS stamp on videos, GPS stamp split layout (map box + text box separate), PhotoStamper verifier fix"
+  },
+  "updatedAt": "2026-10-16T08:40:00+05:00",
+  "lite": {
+    "versionName": "2.1.31-lite",
+    "versionCode": 339,
+    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.31-lite.apk",
+    "notes": "Light version: automatic updates, right shift in every report, GPS camera video with stamp, city name and exact location, cleaner Edit Profile"
+  }
+}
