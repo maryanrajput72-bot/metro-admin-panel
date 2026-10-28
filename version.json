@@ -10,10 +10,10 @@
       "3526",
       "MARYAN"
     ],
-    "versionName": "2.1.42",
-    "versionCode": 350,
-    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.42-trial.apk",
-    "notes": "Trial: One city on GPS photos, exact location (no auto nearest station), GPS stamp on videos, PhotoStamper verifier fix, GPS stamp preview-match, Saved in gallery English, Reference stamp separate map text equal height, Camera preview taller 3:2, Pinch zoom, Capture ring around button, Portal seal N-, Leave Form and Overtime Detail, TOM history last 7 days, Admin panel V17 only, Premium request screen, Leave Form tile in Opening, Station dropdown, Leave and Overtime combined send, Premium Role, Date always today, Online staff for any station, Signup-style station picker, Pretty name cards, Generate Note preview, Changelog latest only, Staff Attendance new look, Leave station own by default, Overtime station selection only"
+    "versionName": "2.1.43",
+    "versionCode": 351,
+    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.43-trial.apk",
+    "notes": "Trial: One city on GPS photos, exact location (no auto nearest station), GPS stamp on videos, PhotoStamper verifier fix, GPS stamp preview-match, Saved in gallery English, Reference stamp separate map text equal height, Camera preview taller 3:2, Pinch zoom, Capture ring around button, Portal seal N-, Leave Form and Overtime Detail, TOM history last 7 days, Admin panel V17 only, Premium request screen, Leave Form tile in Opening, Station dropdown, Leave and Overtime combined send, Premium Role, Date always today, Online staff for any station, Signup-style station picker, Pretty name cards, Generate Note preview, Changelog latest only, Staff Attendance new look, Leave station own by default, Overtime station selection only, Staff Attendance premium glass compact rows, Time disabled when not On Duty, Expand details"
   },
   "updatedAt": "2026-10-16T08:40:00+05:00",
   "lite": {
