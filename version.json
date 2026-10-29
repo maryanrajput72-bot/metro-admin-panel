@@ -17,9 +17,9 @@
   },
   "updatedAt": "2026-10-16T08:40:00+05:00",
   "lite": {
-    "versionName": "2.1.31-lite",
-    "versionCode": 339,
-    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.31-lite.apk",
-    "notes": "Light version: automatic updates, right shift in every report, GPS camera video with stamp, city name and exact location, cleaner Edit Profile"
+    "versionName": "2.1.60-lite",
+    "versionCode": 368,
+    "apkUrl": "https://maryanrajput72-bot.github.io/metro-admin-panel/apk/MetroPlus-v2.1.60-lite.apk",
+    "notes": "Light version: 2.1.60 compressed, zero animations (no fades, no transitions, no confetti), same staff, GPS, TOM and update features"
   }
 }
